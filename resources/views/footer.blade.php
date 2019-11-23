@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container">
-        <p>&copy; 2019 by Group 10</p>
+        <p>&copy; 2019 - Developed with &#x2764; by Group 10</p>
     </div>
 </div>
 <script src="{{asset('js/jquery.js')}}" type="text/javascript"></script>
