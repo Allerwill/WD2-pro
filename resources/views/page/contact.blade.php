@@ -21,7 +21,7 @@
                         <form action="{{url('testmail/test.php')}}" method="post" class="form-horizontal">
                             <input name="url" type="hidden" value="{{route('contact')}}"/>
                             <div class="control-group">
-                                <input name="name" type="text" placeholder="Tên" class="input-xlarge"/>
+                                <input name="name" type="text" placeholder="Name" class="input-xlarge"/>
                             </div>
                             <div class="control-group">
                                 <input name="mail" type="text" placeholder="Email" class="input-xlarge"/>

@@ -22,7 +22,7 @@
                                     <div class="col-md-2 col-sm-3 col-xs-4">
                                         <span class="input-group">
                                             <a class="btn btn-default" href="{{route('addslide')}}">
-                                                <i class="fa fa-plus"></i> Thêm mới
+                                                <i class="fa fa-plus"></i> Add new
                                             </a>
                                         </span>
                                     </div>
@@ -35,21 +35,21 @@
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >3 / trang</option>
+                                                        >3 / page</option>
                                                 <option value="5"
                                                 <?php
                                                 if (@Session::get('perpageslide') == "5") {
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >5 / trang</option>
+                                                        >5 / page</option>
                                                 <option value="10"
                                                 <?php
                                                 if (@Session::get('perpageslide') == "10") {
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >10 / trang</option>
+                                                        >10 / page</option>
                                             </select>
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="submit">
@@ -69,16 +69,16 @@
                                                 <th>ID</th>
                                                 <th>Product</th>
                                                 <th>Hình</th>
-                                                <th>STT</th>
-                                                <th>Sửa</th>
-                                                <th>Xóa</th>
+                                                <th>Arrange</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
                                         </thead>
                                         <tbody>
                                             @foreach($xs as $x)
                                             <tr class="gradeA odd" role="row">
                                                 <td>{{@$x->id}}</td>
                                                 <td>
-                                                    <a href="{{route('viewproduct',@$x->link)}}">Xem SP {{@$x->link}}</a>
+                                                    <a href="{{route('viewproduct',@$x->link)}}">View product {{@$x->link}}</a>
                                                 </td>
                                                 <td><img style="max-width: 500px; max-height: 100px;" src="{{asset('images/slide/'.$x->image)}}" alt="{{$x->name}}"/></td>
                                                 <td class="center">

@@ -21,7 +21,7 @@
     @endforeach
     <div class="thumbnail">
         <div class="caption">
-            <h5>Phương thức thanh toán</h5>
+            <h5>Payment method thanh toán</h5>
             <?php if (@$sys_payment): ?>
                 <img src="{{asset('images/sys/'.@$sys_payment->value)}}" alt="Payments Methods">
             <?php endif; ?>

@@ -318,7 +318,7 @@ Route::get('admin/delbill/{id}.html', [
 
 
 
-//Set STT
+//Set Arrange
 Route::get('admin/sttType/{id}.html', [
     'as' => 'sttType',
     'uses' => 'AdminController@setSttType'

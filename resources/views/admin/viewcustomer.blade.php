@@ -10,11 +10,11 @@
         <div class="col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <a href="{{route('customers')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Thông tin khách hàng
+                    <a href="{{route('customers')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Customer infor
                 </div>
                 <div class="panel-body">
                     <p>
-                        <span>Mã khách hàng: </span><strong> {{@$x->id}} </strong>
+                        <span>Customer ID: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
                         <span>Họ tên: </span><strong> {{@$x->name}} </strong>
@@ -26,7 +26,7 @@
                         <span>Số điện thoại: </span><strong> {{@$x->phone}} </strong>
                     </p>
                     <p>
-                        <span>Địa chỉ: </span><strong> {{@$x->address}} </strong>
+                        <span>Address: </span><strong> {{@$x->address}} </strong>
                     </p>
                     <p>
                         <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>

@@ -17,10 +17,10 @@
                         <span>Mã loại sản phẩm: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Tên loại sản phẩm: </span><strong> {{@$x->name}} </strong>
+                        <span>Product types name: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
-                        <span>Mô tả: </span><span> <?php echo @$x->description; ?> </span>
+                        <span>Description: </span><span> <?php echo @$x->description; ?> </span>
                     </p>
                     <p>
                         <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>

@@ -22,7 +22,7 @@
                                     <div class="col-md-2 col-sm-3 col-xs-4">
                                         <span class="input-group">
                                             <a class="btn btn-default" href="{{route('addproduct')}}">
-                                                <i class="fa fa-plus"></i> Thêm mới
+                                                <i class="fa fa-plus"></i> Add new
                                             </a>
                                         </span>
                                     </div>
@@ -35,21 +35,21 @@
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >3 / trang</option>
+                                                        >3 / page</option>
                                                 <option value="5"
                                                 <?php
                                                 if (@Session::get('perpageproduct') == "5") {
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >5 / trang</option>
+                                                        >5 / page</option>
                                                 <option value="10"
                                                 <?php
                                                 if (@Session::get('perpageproduct') == "10") {
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >10 / trang</option>
+                                                        >10 / page</option>
                                             </select>
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="submit">
@@ -77,13 +77,13 @@
                                         <thead>
                                             <tr role="row">
                                                 <th>ID</th>
-                                                <th>Tên</th>
+                                                <th>Name</th>
                                                 <th>Hình</th>
                                                 <th>Giá</th>
                                                 <th>Sale</th>
-                                                <th>STT</th>
-                                                <th>Sửa</th>
-                                                <th>Xóa</th>
+                                                <th>Arrange</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
                                         </thead>
                                         <tbody>
                                             @foreach($xs as $x)

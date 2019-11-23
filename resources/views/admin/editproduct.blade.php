@@ -22,7 +22,7 @@
                         <input type="hidden" name="id" value="{{$x->id}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Tên loại:</label>
+                            <label>Type name:</label>
                             <input class="form-control" name="name" value="{{$x->name}}" type="text" placeholder="Nhập tên sản phẩm" >
                         </div>
                         <div class="form-group">
@@ -90,7 +90,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Mô tả:</label>
+                            <label>Description:</label>
                             <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Nhập mô tả sản phẩm" rows="5">{{$x->description}}</textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Lưu lại</button>

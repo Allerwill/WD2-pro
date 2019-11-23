@@ -45,15 +45,15 @@
                                     <label class="control-label">Họ tên:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="fullname" type="text" id="inputCountry" placeholder="Họ tên khách hàng" value="{{Auth::user()->full_name}}">
+                                        <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="{{Auth::user()->full_name}}">
                                         @endif
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Địa chỉ:</label>
+                                    <label class="control-label">Address:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="address" type="text" id="inputCountry" placeholder="Địa chỉ nhận hàng" value="{{Auth::user()->address}}">
+                                        <input name="address" type="text" id="inputCountry" placeholder="Shipping address" value="{{Auth::user()->address}}">
                                         @endif
                                     </div>
                                 </div>

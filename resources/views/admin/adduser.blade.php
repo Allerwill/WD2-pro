@@ -12,7 +12,7 @@
                 <div class="panel-heading">
                     <div class="form-group input-group">
                         <span class="input-group-addon left"></span>
-                        <span class="input-group-addon"><Strong>Thêm mới</Strong> - <i class="fa  fa-info"></i></span>
+                        <span class="input-group-addon"><Strong>Add new</Strong> - <i class="fa  fa-info"></i></span>
                         <span class="input-group-addon right"></span>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         <div class="form-group">
                             <label>Account types:</label>
                             <select name="type" class="form-control">
-                                <option value="Khách Hàng">Khách hàng</option>
+                                <option value="Customer">Customer</option>
                                 <option value="Admin">Admin</option>
                                 <option value="Supper Admin">Supper Admin</option>
                             </select>
@@ -59,7 +59,7 @@
                                 <option value="OFF">OFF</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-default">Thêm mới</button>
+                        <button type="submit" class="btn btn-default">Add new</button>
                         <a href="{{route('users')}}" class="btn btn-default">Hủy bỏ</a>
                     </form>
                 </div>

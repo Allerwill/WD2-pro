@@ -12,7 +12,7 @@
                 <div class="panel-heading">
                     <div class="form-group input-group">
                         <span class="input-group-addon left"></span>
-                        <span class="input-group-addon"><Strong>Thêm mới</Strong> - <i class="fa  fa-info"></i></span>
+                        <span class="input-group-addon"><Strong>Add new</Strong> - <i class="fa  fa-info"></i></span>
                         <span class="input-group-addon right"></span>
                     </div>
                 </div>

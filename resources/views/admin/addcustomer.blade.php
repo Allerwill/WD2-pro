@@ -12,7 +12,7 @@
                 <div class="panel-heading">
                     <div class="form-group input-group">
                         <span class="input-group-addon left"></span>
-                        <span class="input-group-addon"><Strong>Thêm mới</Strong> - <i class="fa  fa-info"></i></span>
+                        <span class="input-group-addon"><Strong>Add new</Strong> - <i class="fa  fa-info"></i></span>
                         <span class="input-group-addon right"></span>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                                 <option value="OFF">OFF</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-default">Thêm mới</button>
+                        <button type="submit" class="btn btn-default">Add new</button>
                         <a href="{{route('customers')}}" class="btn btn-default">Hủy bỏ</a>
                     </form>
                 </div>

@@ -80,9 +80,9 @@
                                     <label class="control-label">Họ tên:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="fullname" type="text" id="inputCountry" placeholder="Họ tên khách hàng" value="{{Auth::user()->full_name}}">
+                                        <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="{{Auth::user()->full_name}}">
                                         @else
-                                        <input name="fullname" type="text" id="inputCountry" placeholder="Họ tên khách hàng" value="">
+                                        <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="">
                                         @endif
                                     </div>
                                 </div>
@@ -97,12 +97,12 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Địa chỉ:</label>
+                                    <label class="control-label">Address:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="address" type="text" id="inputCountry" placeholder="Địa chỉ nhận hàng" value="{{Auth::user()->address}}">
+                                        <input name="address" type="text" id="inputCountry" placeholder="Shipping address" value="{{Auth::user()->address}}">
                                         @else
-                                        <input name="address" type="text" id="inputCountry" placeholder="Địa chỉ nhận hàng" value="">
+                                        <input name="address" type="text" id="inputCountry" placeholder="Shipping address" value="">
                                         @endif
                                     </div>
                                 </div>
@@ -129,19 +129,19 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Thanh toán:</label>
+                                    <label class="control-label">Payment method:</label>
                                     <div class="controls">
                                         <select name="payment">
-                                            <option name="payment" value="COD" selected="true">Khi nhận hàng</option>
-                                            <option name="payment" value="ATM">Bằng thẻ ATM</option>
-                                            <option name="payment" value="ZaloPay">Bằng Zalo Pay</option>
-                                            <option name="payment" value="Momo">Bằng Momo</option>
+                                            <option name="payment" value="COD" selected="true">Cash on delivery</option>
+                                            <option name="payment" value="ATM">By ATM</option>
+                                            <option name="payment" value="ZaloPay">By Zalo Pay</option>
+                                            <option name="payment" value="Momo">By Momo</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
-                                        <button type="submit" class="btn">Thanh toán</button>
+                                        <button type="submit" class="btn">Payment</button>
                                     </div>
                                 </div>
                             </form>				  

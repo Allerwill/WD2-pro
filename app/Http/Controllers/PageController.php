@@ -234,7 +234,7 @@ class PageController extends Controller {
         $user->password = Hash::make($req->password);
         $user->phone = $req->phone;
         $user->address = $req->address;
-        $user->type = "Khách Hàng";
+        $user->type = "Customer";
         $user->stt = "OFF";
         $user->save();
         return redirect()->back()->with('message', 'Đã đăng ký thành công! Vui lòng chờ xác nhận email');

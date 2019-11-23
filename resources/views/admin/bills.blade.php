@@ -10,7 +10,7 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <strong>Hóa Đơn [{{$s}}]</strong>
+                    <strong>Invoice [{{$s}}]</strong>
                 </div>
                 <div class="panel-body">
                     <div class="dataTable_wrapper">
@@ -22,7 +22,7 @@
                                     <div class="col-md-2 col-sm-3 col-xs-4">
                                         <span class="input-group">
                                             <a class="btn btn-default" href="">
-                                                <i class="fa fa-file-excel-o"></i> Báo cáo
+                                                <i class="fa fa-file-excel-o"></i> Report
                                             </a>
                                         </span>
                                     </div>
@@ -35,21 +35,21 @@
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >3 / trang</option>
+                                                        >3 / page</option>
                                                 <option value="5"
                                                 <?php
                                                 if (@Session::get('perpagebill') == "5") {
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >5 / trang</option>
+                                                        >5 / page</option>
                                                 <option value="10"
                                                 <?php
                                                 if (@Session::get('perpagebill') == "10") {
                                                     echo 'selected="true"';
                                                 }
                                                 ?>
-                                                        >10 / trang</option>
+                                                        >10 / page</option>
                                             </select>
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="submit">
@@ -77,13 +77,13 @@
                                         <thead>
                                             <tr role="row">
                                                 <th>ID</th>
-                                                <th>Khách hàng</th>
-                                                <th>Tổng tiền</th>
-                                                <th>Ngày đặt</th>
-                                                <th>Thanh toán</th>
-                                                <th>STT</th>
-                                                <th>Xem</th>
-                                                <th>Xóa</th>
+                                                <th>Customer</th>
+                                                <th>Total</th>
+                                                <th>Order date</th>
+                                                <th>Payment method</th>
+                                                <th>Arrange</th>
+                                                <th>View</th>
+                                                <th>Delete</th>
                                         </thead>
                                         <tbody>
                                             @foreach($xs as $x)

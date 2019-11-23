@@ -1,6 +1,6 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{{route('dashboard')}}"><i class="fa fa-home"></i> Quản trị</a>
+        <a class="navbar-brand" href="{{route('dashboard')}}"><i class="fa fa-home"></i> Administration page</a>
     </div>
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Menu</span>
@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
     </button>
     <ul class="nav navbar-nav navbar-left navbar-top-links">
-        <li><a href="{{route('home')}}"><i class="fa fa-university"></i> Trang web</a></li>
+        <li><a href="{{route('home')}}"><i class="fa fa-university"></i> Production page</a></li>
     </ul>
     <ul class="nav navbar-right navbar-top-links">
         <li class="dropdown">

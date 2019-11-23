@@ -52,10 +52,10 @@
                                 <span> = {{number_format($product['item']['unit_price']*$product['qty'])}}đ. </span>
                                 <a class="btn" href="{{route('addtocart',$product['item']['id'])}}" title="Tăng 1"><i class="icon-plus"></i></a>
                                 <a class="btn" href="{{route('reducecart',$product['item']['id'])}}" title="Giảm 1"><i class="icon-minus"></i></a>
-                                <a class="btn" href="{{route('deletecart',$product['item']['id'])}}" title="Xóa tất"><i class="icon-remove icon-white"></i></a>
+                                <a class="btn" href="{{route('deletecart',$product['item']['id'])}}" title="Delete all"><i class="icon-remove icon-white"></i></a>
                                 <hr>
                                 @endforeach
-                                <a class="btn" href="{{route('payment')}}">Tổng cộng: {{number_format(Session('cart')->totalPrice)}}đ. Thanh toán ngay!</a>
+                                <a class="btn" href="{{route('payment')}}">Tổng cộng: {{number_format(Session('cart')->totalPrice)}}đ. Pay now!</a>
                             </div>
                         </div>
                         @else

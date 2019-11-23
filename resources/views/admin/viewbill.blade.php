@@ -17,13 +17,13 @@
                         <span>Mã hóa đơn: </span><strong> {{@$b->id}} </strong>
                     </p>
                     <p>
-                        <span>Mã khách hàng: </span><strong> <a href="{{route('viewcustomer',@$b->id_customer)}}">Xem KH {{@$b->id_customer}}</a> </strong>
+                        <span>Customer ID: </span><strong> <a href="{{route('viewcustomer',@$b->id_customer)}}">Xem KH {{@$b->id_customer}}</a> </strong>
                     </p>
                     <p>
-                        <span>Ngày đặt hàng: </span><strong> {{@$b->date_order}} </strong>
+                        <span>Order date: </span><strong> {{@$b->date_order}} </strong>
                     </p>
                     <p>
-                        <span>Tổng tiền: </span><strong> {{number_format(@$b->total)}}đ </strong>
+                        <span>Total: </span><strong> {{number_format(@$b->total)}}đ </strong>
                     </p>
                     <p>
                         <span>Hình thức thanh toán: </span><strong> {{@$b->payment}} </strong>
@@ -63,7 +63,7 @@
                     <?php foreach (@$bd as $i): ?>
                         <span>Số thứ tự: </span><strong> {{@$j}} </strong>
                         <ul>
-                            <li><span>Product: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">Xem SP {{@$i->id_product}}</a> </strong></li>
+                            <li><span>Product: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">View product {{@$i->id_product}}</a> </strong></li>
                             <li><span>Số lượng: </span><strong> {{@$i->quantity}} </strong></li>
                             <li><span>Đơn giá: </span><strong> {{@number_format(@$i->unit_price)}} </strong></li>
                         </ul>
