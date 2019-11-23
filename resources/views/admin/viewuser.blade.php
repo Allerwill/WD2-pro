@@ -42,7 +42,7 @@
                         <span>Địa chỉ: </span><strong> {{@$x->address}} </strong>
                     </p>
                     <p>
-                        <span>Loại tài khoản: </span><strong> {{@$x->type}} </strong>
+                        <span>Account types: </span><strong> {{@$x->type}} </strong>
                     </p>
                     <p>
                         <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>

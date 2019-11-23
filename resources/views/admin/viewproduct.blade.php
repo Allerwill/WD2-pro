@@ -20,7 +20,7 @@
                         <span>Tên sản phẩm: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
-                        <span>Loại sản phẩm: </span><strong> <a href="{{route('viewtype',@$x->id_type)}}">Xem loại SP {{@$x->id_type}}</a> </strong>
+                        <span>Product types: </span><strong> <a href="{{route('viewtype',@$x->id_type)}}">Xem loại SP {{@$x->id_type}}</a> </strong>
                     </p>
                     <p>
                         <span>Mô tả: </span><span> <?php echo @$x->description; ?> </span>

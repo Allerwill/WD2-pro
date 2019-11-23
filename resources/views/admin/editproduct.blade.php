@@ -26,7 +26,7 @@
                             <input class="form-control" name="name" value="{{$x->name}}" type="text" placeholder="Nhập tên sản phẩm" >
                         </div>
                         <div class="form-group">
-                            <label>Loại:</label>
+                            <label>Types:</label>
                             <select name="id_type" class="form-control">
                                 <?php foreach ($ts as $t): ?>
                                     <option value="{{$t->id}}"

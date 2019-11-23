@@ -45,7 +45,7 @@
                             <input class="form-control" name="repassword" type="password" placeholder="Nhập lại mật khẩu">
                         </div>
                         <div class="form-group">
-                            <label>Loại TK:</label>
+                            <label>Account types:</label>
                             <select name="type" class="form-control">
                                 <option value="Khách Hàng">Khách hàng</option>
                                 <option value="Admin">Admin</option>

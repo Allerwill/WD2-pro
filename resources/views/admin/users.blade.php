@@ -79,7 +79,7 @@
                                                 <th>ID</th>
                                                 <th>Tên</th>
                                                 <th>Email</th>
-                                                <th>Loại TK</th>
+                                                <th>Account types</th>
                                                 <th>STT</th>
                                                 <th>Xóa</th>
                                         </thead>
