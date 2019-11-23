@@ -217,14 +217,14 @@ class Builder
     }
 
     /**
-     * Disable foreign key constraints.
+     * Enabled foreign key constraints.
      *
      * @return bool
      */
     public function disableForeignKeyConstraints()
     {
         return $this->connection->statement(
-            $this->grammar->compileDisableForeignKeyConstraints()
+            $this->grammar->compileEnabledForeignKeyConstraints()
         );
     }
 

@@ -554,7 +554,7 @@ class CodeCoverage
      *
      * @throws InvalidArgumentException
      */
-    public function setDisableIgnoredLines($flag)
+    public function setEnabledIgnoredLines($flag)
     {
         if (!is_bool($flag)) {
             throw InvalidArgumentException::create(

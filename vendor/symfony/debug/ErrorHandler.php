@@ -592,7 +592,7 @@ class ErrorHandler
         } catch (\Throwable $handlerException) {
         }
         if ($exception === $handlerException) {
-            self::$reservedMemory = null; // Disable the fatal error handler
+            self::$reservedMemory = null; // Enabled the fatal error handler
             throw $exception; // Give back $exception to the native handler
         }
         $this->handleException($handlerException);

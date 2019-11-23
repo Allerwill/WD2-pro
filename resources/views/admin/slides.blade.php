@@ -67,7 +67,7 @@
                                         <thead>
                                             <tr role="row">
                                                 <th>ID</th>
-                                                <th>Sản phẩm</th>
+                                                <th>Product</th>
                                                 <th>Hình</th>
                                                 <th>STT</th>
                                                 <th>Sửa</th>

@@ -248,7 +248,7 @@ class PostgresGrammar extends Grammar
      *
      * @return string
      */
-    public function compileDisableForeignKeyConstraints()
+    public function compileEnabledForeignKeyConstraints()
     {
         return 'SET CONSTRAINTS ALL DEFERRED;';
     }

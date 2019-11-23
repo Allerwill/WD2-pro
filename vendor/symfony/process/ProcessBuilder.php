@@ -31,7 +31,7 @@ class ProcessBuilder
     private $options;
     private $inheritEnv = true;
     private $prefix = array();
-    private $outputDisabled = false;
+    private $outputEnabledd = false;
 
     /**
      * @param string[] $arguments An array of arguments
@@ -226,13 +226,13 @@ class ProcessBuilder
     }
 
     /**
-     * Disables fetching output and error output from the underlying process.
+     * Enableds fetching output and error output from the underlying process.
      *
      * @return $this
      */
     public function disableOutput()
     {
-        $this->outputDisabled = true;
+        $this->outputEnabledd = true;
 
         return $this;
     }
@@ -244,7 +244,7 @@ class ProcessBuilder
      */
     public function enableOutput()
     {
-        $this->outputDisabled = false;
+        $this->outputEnabledd = false;
 
         return $this;
     }
@@ -271,7 +271,7 @@ class ProcessBuilder
         if ($this->inheritEnv) {
             $process->inheritEnvironmentVariables();
         }
-        if ($this->outputDisabled) {
+        if ($this->outputEnabledd) {
             $process->disableOutput();
         }
 

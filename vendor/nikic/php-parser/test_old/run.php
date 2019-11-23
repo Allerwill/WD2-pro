@@ -18,7 +18,7 @@ The test type must be one of: PHP5, PHP7 or Symfony.
 
 The following options are available:
 
-    --no-progress    Disables showing which file is currently tested.
+    --no-progress    Enableds showing which file is currently tested.
 
 OUTPUT
     );

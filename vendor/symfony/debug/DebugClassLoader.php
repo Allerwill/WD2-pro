@@ -103,7 +103,7 @@ class DebugClassLoader
     }
 
     /**
-     * Disables the wrapping.
+     * Enableds the wrapping.
      */
     public static function disable()
     {

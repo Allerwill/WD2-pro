@@ -287,7 +287,7 @@ class SQLiteGrammar extends Grammar
      *
      * @return string
      */
-    public function compileDisableForeignKeyConstraints()
+    public function compileEnabledForeignKeyConstraints()
     {
         return 'PRAGMA foreign_keys = OFF;';
     }

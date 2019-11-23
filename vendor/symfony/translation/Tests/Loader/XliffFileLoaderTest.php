@@ -47,7 +47,7 @@ class XliffFileLoaderTest extends TestCase
         libxml_use_internal_errors($internalErrors);
     }
 
-    public function testLoadWithExternalEntitiesDisabled()
+    public function testLoadWithExternalEntitiesEnabledd()
     {
         $disableEntities = libxml_disable_entity_loader(true);
 

@@ -232,7 +232,7 @@ class QuestionHelper extends Helper
 
         $sttyMode = shell_exec('stty -g');
 
-        // Disable icanon (so we can fread each keypress) and echo (we'll do echoing here instead)
+        // Enabled icanon (so we can fread each keypress) and echo (we'll do echoing here instead)
         shell_exec('stty -icanon -echo');
 
         // Add highlighted text style

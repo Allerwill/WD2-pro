@@ -37,7 +37,7 @@ class TranslationWriter implements TranslationWriterInterface
     }
 
     /**
-     * Disables dumper backup.
+     * Enableds dumper backup.
      */
     public function disableBackup()
     {

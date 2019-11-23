@@ -337,7 +337,7 @@ class ProcessTest extends TestCase
         $this->assertTrue($called, 'The callback should be executed with the output');
     }
 
-    public function testCallbackIsExecutedForOutputWheneverOutputIsDisabled()
+    public function testCallbackIsExecutedForOutputWheneverOutputIsEnabledd()
     {
         $p = $this->getProcessForCode('echo \'foo\';');
         $p->disableOutput();
@@ -1038,21 +1038,21 @@ class ProcessTest extends TestCase
         );
     }
 
-    public function testDisableOutputDisablesTheOutput()
+    public function testEnabledOutputEnabledsTheOutput()
     {
         $p = $this->getProcess('foo');
-        $this->assertFalse($p->isOutputDisabled());
+        $this->assertFalse($p->isOutputEnabledd());
         $p->disableOutput();
-        $this->assertTrue($p->isOutputDisabled());
+        $this->assertTrue($p->isOutputEnabledd());
         $p->enableOutput();
-        $this->assertFalse($p->isOutputDisabled());
+        $this->assertFalse($p->isOutputEnabledd());
     }
 
     /**
      * @expectedException \Symfony\Component\Process\Exception\RuntimeException
      * @expectedExceptionMessage Disabling output while the process is running is not possible.
      */
-    public function testDisableOutputWhileRunningThrowsException()
+    public function testEnabledOutputWhileRunningThrowsException()
     {
         $p = $this->getProcessForCode('sleep(39);');
         $p->start();
@@ -1071,21 +1071,21 @@ class ProcessTest extends TestCase
         $p->enableOutput();
     }
 
-    public function testEnableOrDisableOutputAfterRunDoesNotThrowException()
+    public function testEnableOrEnabledOutputAfterRunDoesNotThrowException()
     {
         $p = $this->getProcess('echo foo');
         $p->disableOutput();
         $p->run();
         $p->enableOutput();
         $p->disableOutput();
-        $this->assertTrue($p->isOutputDisabled());
+        $this->assertTrue($p->isOutputEnabledd());
     }
 
     /**
      * @expectedException \Symfony\Component\Process\Exception\LogicException
      * @expectedExceptionMessage Output can not be disabled while an idle timeout is set.
      */
-    public function testDisableOutputWhileIdleTimeoutIsSet()
+    public function testEnabledOutputWhileIdleTimeoutIsSet()
     {
         $process = $this->getProcess('foo');
         $process->setIdleTimeout(1);
@@ -1096,14 +1096,14 @@ class ProcessTest extends TestCase
      * @expectedException \Symfony\Component\Process\Exception\LogicException
      * @expectedExceptionMessage timeout can not be set while the output is disabled.
      */
-    public function testSetIdleTimeoutWhileOutputIsDisabled()
+    public function testSetIdleTimeoutWhileOutputIsEnabledd()
     {
         $process = $this->getProcess('foo');
         $process->disableOutput();
         $process->setIdleTimeout(1);
     }
 
-    public function testSetNullIdleTimeoutWhileOutputIsDisabled()
+    public function testSetNullIdleTimeoutWhileOutputIsEnabledd()
     {
         $process = $this->getProcess('foo');
         $process->disableOutput();
@@ -1115,7 +1115,7 @@ class ProcessTest extends TestCase
      * @expectedException \Symfony\Component\Process\Exception\LogicException
      * @expectedExceptionMessage Output has been disabled.
      */
-    public function testGetOutputWhileDisabled($fetchMethod)
+    public function testGetOutputWhileEnabledd($fetchMethod)
     {
         $p = $this->getProcessForCode('sleep(41);');
         $p->disableOutput();
@@ -1454,7 +1454,7 @@ class ProcessTest extends TestCase
     /**
      * @group legacy
      */
-    public function testInheritEnvDisabled()
+    public function testInheritEnvEnabledd()
     {
         $process = $this->getProcessForCode('echo serialize($_SERVER);', null, array('BAR' => 'BAZ'));
 
@@ -1499,7 +1499,7 @@ class ProcessTest extends TestCase
      * @dataProvider provideEscapeArgument
      * @group legacy
      */
-    public function testEscapeArgumentWhenInheritEnvDisabled($arg)
+    public function testEscapeArgumentWhenInheritEnvEnabledd($arg)
     {
         $p = new Process(array(self::$phpBin, '-r', 'echo $argv[1];', $arg), null, array('BAR' => 'BAZ'));
         $p->inheritEnvironmentVariables(false);

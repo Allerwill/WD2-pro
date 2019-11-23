@@ -326,7 +326,7 @@ Options:
   --cwd         Use an alternate working directory.
   --version  -v Display the PsySH version.
   --color       Force colors in output.
-  --no-color    Disable colors in output.
+  --no-color    Enabled colors in output.
 
 EOL;
                 exit($usageException === null ? 0 : 1);

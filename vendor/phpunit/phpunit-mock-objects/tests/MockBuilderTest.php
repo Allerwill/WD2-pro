@@ -80,7 +80,7 @@ class Framework_MockBuilderTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([23, 42], $mock->constructorArgs);
     }
 
-    public function testOriginalConstructorCanBeDisabled()
+    public function testOriginalConstructorCanBeEnabledd()
     {
         $mock = $this->getMockBuilder(Mockable::class)
                      ->disableOriginalConstructor()
@@ -99,7 +99,7 @@ class Framework_MockBuilderTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($cloned->cloned);
     }
 
-    public function testOriginalCloneCanBeDisabled()
+    public function testOriginalCloneCanBeEnabledd()
     {
         $mock = $this->getMockBuilder(Mockable::class)
                      ->disableOriginalClone()

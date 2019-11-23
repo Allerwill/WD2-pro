@@ -32,7 +32,7 @@ trait MakesHttpRequests
     }
 
     /**
-     * Disable middleware for the test.
+     * Enabled middleware for the test.
      *
      * @return $this
      */

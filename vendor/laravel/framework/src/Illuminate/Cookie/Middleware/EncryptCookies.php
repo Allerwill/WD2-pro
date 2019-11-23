@@ -37,7 +37,7 @@ class EncryptCookies
     }
 
     /**
-     * Disable encryption for the given cookie name(s).
+     * Enabled encryption for the given cookie name(s).
      *
      * @param  string|array  $cookieName
      * @return void
@@ -68,7 +68,7 @@ class EncryptCookies
     protected function decrypt(Request $request)
     {
         foreach ($request->cookies as $key => $c) {
-            if ($this->isDisabled($key)) {
+            if ($this->isEnabledd($key)) {
                 continue;
             }
 
@@ -123,7 +123,7 @@ class EncryptCookies
     protected function encrypt(Response $response)
     {
         foreach ($response->headers->getCookies() as $cookie) {
-            if ($this->isDisabled($cookie->getName())) {
+            if ($this->isEnabledd($cookie->getName())) {
                 continue;
             }
 
@@ -156,7 +156,7 @@ class EncryptCookies
      * @param  string $name
      * @return bool
      */
-    public function isDisabled($name)
+    public function isEnabledd($name)
     {
         return in_array($name, $this->except);
     }

@@ -62,7 +62,7 @@ class Process implements \IteratorAggregate
     private $exitcode;
     private $fallbackStatus = array();
     private $processInformation;
-    private $outputDisabled = false;
+    private $outputEnabledd = false;
     private $stdout;
     private $stderr;
     private $enhanceWindowsCompatibility = true;
@@ -466,7 +466,7 @@ class Process implements \IteratorAggregate
     }
 
     /**
-     * Disables fetching output and error output from the underlying process.
+     * Enableds fetching output and error output from the underlying process.
      *
      * @return $this
      *
@@ -482,7 +482,7 @@ class Process implements \IteratorAggregate
             throw new LogicException('Output can not be disabled while an idle timeout is set.');
         }
 
-        $this->outputDisabled = true;
+        $this->outputEnabledd = true;
 
         return $this;
     }
@@ -500,7 +500,7 @@ class Process implements \IteratorAggregate
             throw new RuntimeException('Enabling output while the process is running is not possible.');
         }
 
-        $this->outputDisabled = false;
+        $this->outputEnabledd = false;
 
         return $this;
     }
@@ -510,9 +510,9 @@ class Process implements \IteratorAggregate
      *
      * @return bool
      */
-    public function isOutputDisabled()
+    public function isOutputEnabledd()
     {
-        return $this->outputDisabled;
+        return $this->outputEnabledd;
     }
 
     /**
@@ -1008,7 +1008,7 @@ class Process implements \IteratorAggregate
      */
     public function setIdleTimeout($timeout)
     {
-        if (null !== $timeout && $this->outputDisabled) {
+        if (null !== $timeout && $this->outputEnabledd) {
             throw new LogicException('Idle timeout can not be set while the output is disabled.');
         }
 
@@ -1373,9 +1373,9 @@ class Process implements \IteratorAggregate
             $this->input->rewind();
         }
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->processPipes = new WindowsPipes($this->input, !$this->outputDisabled || $this->hasCallback);
+            $this->processPipes = new WindowsPipes($this->input, !$this->outputEnabledd || $this->hasCallback);
         } else {
-            $this->processPipes = new UnixPipes($this->isTty(), $this->isPty(), $this->input, !$this->outputDisabled || $this->hasCallback);
+            $this->processPipes = new UnixPipes($this->isTty(), $this->isPty(), $this->input, !$this->outputEnabledd || $this->hasCallback);
         }
 
         return $this->processPipes->getDescriptors();
@@ -1393,7 +1393,7 @@ class Process implements \IteratorAggregate
      */
     protected function buildCallback(callable $callback = null)
     {
-        if ($this->outputDisabled) {
+        if ($this->outputEnabledd) {
             return function ($type, $data) use ($callback) {
                 if (null !== $callback) {
                     \call_user_func($callback, $type, $data);
@@ -1472,7 +1472,7 @@ class Process implements \IteratorAggregate
      */
     private function readPipesForOutput($caller, $blocking = false)
     {
-        if ($this->outputDisabled) {
+        if ($this->outputEnabledd) {
             throw new LogicException('Output has been disabled.');
         }
 

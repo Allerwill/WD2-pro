@@ -44,7 +44,7 @@ class HtmlExtension extends AbstractExtension
         return array(
             'checked' => array($this, 'translateChecked'),
             'link' => array($this, 'translateLink'),
-            'disabled' => array($this, 'translateDisabled'),
+            'disabled' => array($this, 'translateEnabledd'),
             'enabled' => array($this, 'translateEnabled'),
             'selected' => array($this, 'translateSelected'),
             'invalid' => array($this, 'translateInvalid'),
@@ -86,7 +86,7 @@ class HtmlExtension extends AbstractExtension
     /**
      * @return XPathExpr
      */
-    public function translateDisabled(XPathExpr $xpath)
+    public function translateEnabledd(XPathExpr $xpath)
     {
         return $xpath->addCondition(
             '('

@@ -333,7 +333,7 @@ class MySqlGrammar extends Grammar
      *
      * @return string
      */
-    public function compileDisableForeignKeyConstraints()
+    public function compileEnabledForeignKeyConstraints()
     {
         return 'SET FOREIGN_KEY_CHECKS=0;';
     }

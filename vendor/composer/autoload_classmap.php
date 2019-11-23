@@ -2116,7 +2116,7 @@ return array(
     'Prophecy\\Comparator\\ProphecyComparator' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Comparator/ProphecyComparator.php',
     'Prophecy\\Doubler\\CachedDoubler' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php',
     'Prophecy\\Doubler\\ClassPatch\\ClassPatchInterface' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php',
-    'Prophecy\\Doubler\\ClassPatch\\DisableConstructorPatch' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php',
+    'Prophecy\\Doubler\\ClassPatch\\EnabledConstructorPatch' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/EnabledConstructorPatch.php',
     'Prophecy\\Doubler\\ClassPatch\\HhvmExceptionPatch' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php',
     'Prophecy\\Doubler\\ClassPatch\\KeywordPatch' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/KeywordPatch.php',
     'Prophecy\\Doubler\\ClassPatch\\MagicCallPatch' => $vendorDir . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php',

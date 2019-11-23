@@ -76,7 +76,7 @@ class FingersCrossedHandlerTest extends TestCase
      * @covers Monolog\Handler\FingersCrossedHandler::handle
      * @covers Monolog\Handler\FingersCrossedHandler::activate
      */
-    public function testHandleRestartBufferingAfterBeingTriggeredWhenStopBufferingIsDisabled()
+    public function testHandleRestartBufferingAfterBeingTriggeredWhenStopBufferingIsEnabledd()
     {
         $test = new TestHandler();
         $handler = new FingersCrossedHandler($test, Logger::WARNING, 0, false, false);

@@ -182,13 +182,13 @@ class ProcessBuilderTest extends TestCase
         }
     }
 
-    public function testShouldReturnProcessWithDisabledOutput()
+    public function testShouldReturnProcessWithEnableddOutput()
     {
         $process = ProcessBuilder::create(array('/usr/bin/php'))
             ->disableOutput()
             ->getProcess();
 
-        $this->assertTrue($process->isOutputDisabled());
+        $this->assertTrue($process->isOutputEnabledd());
     }
 
     public function testShouldReturnProcessWithEnabledOutput()
@@ -198,7 +198,7 @@ class ProcessBuilderTest extends TestCase
             ->enableOutput()
             ->getProcess();
 
-        $this->assertFalse($process->isOutputDisabled());
+        $this->assertFalse($process->isOutputEnabledd());
     }
 
     /**

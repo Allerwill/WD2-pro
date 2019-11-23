@@ -2396,7 +2396,7 @@ class ComposerStaticInit274ff58d510127da3814e3a120d8db14
         'Prophecy\\Comparator\\ProphecyComparator' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Comparator/ProphecyComparator.php',
         'Prophecy\\Doubler\\CachedDoubler' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php',
         'Prophecy\\Doubler\\ClassPatch\\ClassPatchInterface' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php',
-        'Prophecy\\Doubler\\ClassPatch\\DisableConstructorPatch' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php',
+        'Prophecy\\Doubler\\ClassPatch\\EnabledConstructorPatch' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/EnabledConstructorPatch.php',
         'Prophecy\\Doubler\\ClassPatch\\HhvmExceptionPatch' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php',
         'Prophecy\\Doubler\\ClassPatch\\KeywordPatch' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/KeywordPatch.php',
         'Prophecy\\Doubler\\ClassPatch\\MagicCallPatch' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php',

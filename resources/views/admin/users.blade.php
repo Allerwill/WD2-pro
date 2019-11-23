@@ -10,7 +10,7 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <strong>Tài Khoản [{{$s}}]</strong>
+                    <strong>Account [{{$s}}]</strong>
                 </div>
                 <div class="panel-body">
                     <div class="dataTable_wrapper">

@@ -42,7 +42,7 @@ class ConsoleColorFactory
         } elseif ($this->colorMode === Configuration::COLOR_MODE_FORCED) {
             return $this->getForcedConsoleColor();
         } elseif ($this->colorMode === Configuration::COLOR_MODE_DISABLED) {
-            return $this->getDisabledConsoleColor();
+            return $this->getEnableddConsoleColor();
         }
     }
 
@@ -65,7 +65,7 @@ class ConsoleColorFactory
         return $color;
     }
 
-    private function getDisabledConsoleColor()
+    private function getEnableddConsoleColor()
     {
         $color = new ConsoleColor();
 

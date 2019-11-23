@@ -217,7 +217,7 @@ class UrlGeneratorTest extends TestCase
         $this->assertNull($generator->generate('test', array('foo' => 'bar'), UrlGeneratorInterface::ABSOLUTE_URL));
     }
 
-    public function testGenerateForRouteWithInvalidParameterButDisabledRequirementsCheck()
+    public function testGenerateForRouteWithInvalidParameterButEnableddRequirementsCheck()
     {
         $routes = $this->getRoutes('test', new Route('/testing/{foo}', array('foo' => '1'), array('foo' => 'd+')));
         $generator = $this->getGenerator($routes);

@@ -14,7 +14,7 @@
                         </a>
                     </li>
                     <li style="margin: 20px;">
-                        <span class="btn"><a href="{{route('allproduct')}}">Sản phẩm</a></span>
+                        <span class="btn"><a href="{{route('allproduct')}}">Product</a></span>
                     </li>
                     <li style="margin: 20px;">
                         <span class="btn"><a href="{{route('about')}}">Thông tin</a></span>
@@ -24,7 +24,7 @@
                     </li>
                     @if(Auth::check())
                     <li class="dropdown-mp" style="margin: 20px;">
-                        <span class="dropbtn-mp btn">Tài khoản</span>
+                        <span class="dropbtn-mp btn">Account</span>
                         <span class="dropdown-content-mp-s">
                             <a href="{{route('profile')}}">{{Auth::user()->full_name}}</a><br>
                             <a href="{{route('logout')}}">Đăng xuất</a>
@@ -32,7 +32,7 @@
                     </li>
                     @else
                     <li class="dropdown-mp" style="margin: 20px;">
-                        <span class="dropbtn-mp btn">Tài khoản</span>
+                        <span class="dropbtn-mp btn">Account</span>
                         <span class="dropdown-content-mp-s">
                             <a href="{{route('login')}}">Đăng nhập</a><br>
                             <a href="{{route('register')}}">Đăng ký</a>

@@ -38,7 +38,7 @@ class ConsoleColorFactoryTest extends \PHPUnit\Framework\TestCase
         $this->assertSame(['blue'], $themes['line_number']);
     }
 
-    public function testGetConsoleColorDisabled()
+    public function testGetConsoleColorEnabledd()
     {
         $colorMode = Configuration::COLOR_MODE_DISABLED;
         $factory   = new ConsoleColorFactory($colorMode);

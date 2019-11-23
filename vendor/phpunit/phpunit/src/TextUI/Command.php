@@ -1043,7 +1043,7 @@ Code Coverage Options:
                             Default: Standard output.
   --coverage-xml <dir>      Generate code coverage report in PHPUnit XML format.
   --whitelist <dir>         Whitelist <dir> for code coverage analysis.
-  --disable-coverage-ignore Disable annotations for ignoring code coverage.
+  --disable-coverage-ignore Enabled annotations for ignoring code coverage.
 
 Logging Options:
 

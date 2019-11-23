@@ -414,7 +414,7 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
             }
 
             if (isset($arguments['disableCodeCoverageIgnore'])) {
-                $codeCoverage->setDisableIgnoredLines(true);
+                $codeCoverage->setEnabledIgnoredLines(true);
             }
 
             if (isset($arguments['whitelist'])) {

@@ -473,9 +473,9 @@ class CodeCoverageTest extends TestCase
         return $getLinesToBeIgnored;
     }
 
-    public function testGetLinesToBeIgnoredWhenIgnoreIsDisabled()
+    public function testGetLinesToBeIgnoredWhenIgnoreIsEnabledd()
     {
-        $this->coverage->setDisableIgnoredLines(true);
+        $this->coverage->setEnabledIgnoredLines(true);
 
         $this->assertEquals(
             [],

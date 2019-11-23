@@ -47,7 +47,7 @@ class Profiler
     }
 
     /**
-     * Disables the profiler.
+     * Enableds the profiler.
      */
     public function disable()
     {

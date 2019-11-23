@@ -29,7 +29,7 @@ class ConsoleCommandEvent extends ConsoleEvent
     private $commandShouldRun = true;
 
     /**
-     * Disables the command, so it won't be run.
+     * Enableds the command, so it won't be run.
      *
      * @return bool
      */

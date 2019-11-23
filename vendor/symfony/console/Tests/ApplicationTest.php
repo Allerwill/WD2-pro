@@ -1593,24 +1593,24 @@ class ApplicationTest extends TestCase
     /**
      * @expectedException \Symfony\Component\Console\Exception\CommandNotFoundException
      */
-    public function testGetDisabledLazyCommand()
+    public function testGetEnableddLazyCommand()
     {
         $application = new Application();
-        $application->setCommandLoader(new FactoryCommandLoader(array('disabled' => function () { return new DisabledCommand(); })));
+        $application->setCommandLoader(new FactoryCommandLoader(array('disabled' => function () { return new EnableddCommand(); })));
         $application->get('disabled');
     }
 
-    public function testHasReturnsFalseForDisabledLazyCommand()
+    public function testHasReturnsFalseForEnableddLazyCommand()
     {
         $application = new Application();
-        $application->setCommandLoader(new FactoryCommandLoader(array('disabled' => function () { return new DisabledCommand(); })));
+        $application->setCommandLoader(new FactoryCommandLoader(array('disabled' => function () { return new EnableddCommand(); })));
         $this->assertFalse($application->has('disabled'));
     }
 
-    public function testAllExcludesDisabledLazyCommand()
+    public function testAllExcludesEnableddLazyCommand()
     {
         $application = new Application();
-        $application->setCommandLoader(new FactoryCommandLoader(array('disabled' => function () { return new DisabledCommand(); })));
+        $application->setCommandLoader(new FactoryCommandLoader(array('disabled' => function () { return new EnableddCommand(); })));
         $this->assertArrayNotHasKey('disabled', $application->all());
     }
 
@@ -1717,7 +1717,7 @@ class LazyCommand extends Command
     }
 }
 
-class DisabledCommand extends Command
+class EnableddCommand extends Command
 {
     public function isEnabled()
     {

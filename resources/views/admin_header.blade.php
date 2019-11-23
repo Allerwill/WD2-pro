@@ -17,12 +17,12 @@
                 <i class="fa fa-user fa-fw"></i> <?php echo Auth::user()->full_name; ?> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu dropdown-user">
-                <li><a ><i class="fa fa-user fa-fw"></i> Quyền <?php echo Auth::user()->type; ?></a>
+                <li><a ><i class="fa fa-user fa-fw"></i> Role <?php echo Auth::user()->type; ?></a>
                 </li>
-                <li><a href="{{route('profile_admin')}}"><i class="fa fa-gear fa-fw"></i> Tài khoản</a>
+                <li><a href="{{route('profile_admin')}}"><i class="fa fa-gear fa-fw"></i> Account</a>
                 </li>
                 <li class="divider"></li>
-                <li><a href="{{route('logoutadmin')}}"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
+                <li><a href="{{route('logoutadmin')}}"><i class="fa fa-sign-out fa-fw"></i> Log out</a>
                 </li>
             </ul>
         </li>
@@ -44,25 +44,25 @@
                     <a href="{{route('dashboard')}}" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a  href="{{route('types')}}"><i class="fa fa-tags"></i> Loại sản phẩm</a>
+                    <a  href="{{route('types')}}"><i class="fa fa-tags"></i> Product types</a>
                 </li>
                 <li>
-                    <a  href="{{route('products')}}"><i class="fa fa-heart-o"></i> Sản phẩm</a>
+                    <a  href="{{route('products')}}"><i class="fa fa-heart-o"></i> Products</a>
                 </li>
                 <li>
-                    <a  href="{{route('slides')}}"><i class="fa fa-tv"></i> Trang Slide</a>
+                    <a  href="{{route('slides')}}"><i class="fa fa-tv"></i> Slider</a>
                 </li>
                 <li>
-                    <a  href="{{route('users')}}"><i class="fa fa-user"></i> Tài khoản</a>
+                    <a  href="{{route('users')}}"><i class="fa fa-user"></i> Accounts</a>
                 </li>
                 <li>
-                    <a  href="{{route('customers')}}"><i class="fa fa-users"></i> Khách hàng</a>
+                    <a  href="{{route('customers')}}"><i class="fa fa-users"></i> Customers</a>
                 </li>
                 <li>
-                    <a  href="{{route('bills')}}"><i class="fa fa-paperclip"></i> Hóa đơn</a>
+                    <a  href="{{route('bills')}}"><i class="fa fa-paperclip"></i> Invoice</a>
                 </li>
                 <li>
-                    <a  href="{{route('system')}}"><i class="fa fa-cogs"></i> Cài đặt</a>
+                    <a  href="{{route('system')}}"><i class="fa fa-cogs"></i> Setting</a>
                 </li>
             </ul>
         </div>

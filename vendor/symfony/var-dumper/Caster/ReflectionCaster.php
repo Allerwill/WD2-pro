@@ -23,7 +23,7 @@ class ReflectionCaster
     private static $extraMap = array(
         'docComment' => 'getDocComment',
         'extension' => 'getExtensionName',
-        'isDisabled' => 'isDisabled',
+        'isEnabledd' => 'isEnabledd',
         'isDeprecated' => 'isDeprecated',
         'isInternal' => 'isInternal',
         'isUserDefined' => 'isUserDefined',

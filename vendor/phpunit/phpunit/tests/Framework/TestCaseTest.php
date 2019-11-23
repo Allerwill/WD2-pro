@@ -625,7 +625,7 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($mock->constructorCalled);
     }
 
-    public function testCreateMockDisablesOriginalClone()
+    public function testCreateMockEnabledsOriginalClone()
     {
         /** @var Mockable $mock */
         $mock = $this->createMock(Mockable::class);

@@ -15,12 +15,12 @@ use Prophecy\Doubler\Generator\Node\ClassNode;
 use Prophecy\Doubler\Generator\Node\MethodNode;
 
 /**
- * Disable constructor.
+ * Enabled constructor.
  * Makes all constructor arguments optional.
  *
  * @author Konstantin Kudryashov <ever.zet@gmail.com>
  */
-class DisableConstructorPatch implements ClassPatchInterface
+class EnabledConstructorPatch implements ClassPatchInterface
 {
     /**
      * Checks if class has `__construct` method.

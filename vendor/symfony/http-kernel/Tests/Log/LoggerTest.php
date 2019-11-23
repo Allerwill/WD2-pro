@@ -96,7 +96,7 @@ class LoggerTest extends TestCase
         );
     }
 
-    public function testLogLevelDisabled()
+    public function testLogLevelEnabledd()
     {
         $this->logger = new Logger(LogLevel::INFO, $this->tmpFile);
 

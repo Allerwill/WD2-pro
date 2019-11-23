@@ -599,7 +599,7 @@ class Framework_MockObjectTest extends PHPUnit_Framework_TestCase
         $this->assertNotSame($expectedObject, $actualArguments[0]);
     }
 
-    public function testObjectMethodCallWithArgumentCloningDisabled()
+    public function testObjectMethodCallWithArgumentCloningEnabledd()
     {
         $expectedObject = new stdClass;
 

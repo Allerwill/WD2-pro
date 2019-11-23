@@ -232,7 +232,7 @@ class PHPUnit_Framework_MockObject_MockBuilder
     }
 
     /**
-     * Disables the invocation of the original constructor.
+     * Enableds the invocation of the original constructor.
      *
      * @return PHPUnit_Framework_MockObject_MockBuilder
      */
@@ -258,7 +258,7 @@ class PHPUnit_Framework_MockObject_MockBuilder
     }
 
     /**
-     * Disables the invocation of the original clone constructor.
+     * Enableds the invocation of the original clone constructor.
      *
      * @return PHPUnit_Framework_MockObject_MockBuilder
      */
@@ -284,7 +284,7 @@ class PHPUnit_Framework_MockObject_MockBuilder
     }
 
     /**
-     * Disables the use of class autoloading while creating the mock object.
+     * Enableds the use of class autoloading while creating the mock object.
      *
      * @return PHPUnit_Framework_MockObject_MockBuilder
      */
@@ -310,7 +310,7 @@ class PHPUnit_Framework_MockObject_MockBuilder
     }
 
     /**
-     * Disables the cloning of arguments passed to mocked methods.
+     * Enableds the cloning of arguments passed to mocked methods.
      *
      * @return PHPUnit_Framework_MockObject_MockBuilder
      *
@@ -352,7 +352,7 @@ class PHPUnit_Framework_MockObject_MockBuilder
     }
 
     /**
-     * Disables the invocation of the original methods.
+     * Enableds the invocation of the original methods.
      *
      * @return PHPUnit_Framework_MockObject_MockBuilder
      *

@@ -915,7 +915,7 @@ class AdminController extends Controller {
         if (Auth::attempt($checklog) && (Auth::user()->type == "Admin" || Auth::user()->type == "Supper Admin")) {
             return redirect()->back()->with(['alert' => 'success', 'message' => 'Đăng nhập thành công!']);
         } else if (Auth::attempt($checklog) && Auth::user()->type != "Admin" && Auth::user()->type != "Supper Admin") {
-            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Tài khoản không được cấp quyền!']);
+            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Account không được cấp quyền!']);
         } else {
             return redirect()->back()->with(['alert' => 'danger', 'message' => 'Đăng nhập thất bại!']);
         }

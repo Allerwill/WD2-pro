@@ -521,7 +521,7 @@ YAML
     /**
      * @dataProvider invalidDumpedObjectProvider
      */
-    public function testObjectSupportDisabledButNoExceptions($input)
+    public function testObjectSupportEnableddButNoExceptions($input)
     {
         $this->assertEquals(array('foo' => null, 'bar' => 1), $this->parser->parse($input), '->parse() does not parse objects');
     }
@@ -612,7 +612,7 @@ YAML;
      * @dataProvider invalidDumpedObjectProvider
      * @expectedException \Symfony\Component\Yaml\Exception\ParseException
      */
-    public function testObjectsSupportDisabledWithExceptions($yaml)
+    public function testObjectsSupportEnableddWithExceptions($yaml)
     {
         $this->parser->parse($yaml, Yaml::PARSE_EXCEPTION_ON_INVALID_TYPE);
     }
@@ -633,7 +633,7 @@ YAML;
      * @dataProvider invalidDumpedObjectProvider
      * @expectedException \Symfony\Component\Yaml\Exception\ParseException
      */
-    public function testObjectsSupportDisabledWithExceptionsUsingBooleanToggles($yaml)
+    public function testObjectsSupportEnableddWithExceptionsUsingBooleanToggles($yaml)
     {
         $this->parser->parse($yaml, true);
     }
@@ -1807,7 +1807,7 @@ YAML
      * @expectedException \Symfony\Component\Yaml\Exception\ParseException
      * @expectedExceptionMessage Tags support is not enabled. Enable the `Yaml::PARSE_CUSTOM_TAGS` flag to use "!iterator" at line 1 (near "!iterator [foo]").
      */
-    public function testCustomTagsDisabled()
+    public function testCustomTagsEnabledd()
     {
         $this->parser->parse('!iterator [foo]');
     }

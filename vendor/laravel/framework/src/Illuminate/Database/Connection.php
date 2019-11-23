@@ -1101,7 +1101,7 @@ class Connection implements ConnectionInterface
     }
 
     /**
-     * Disable the query log on the connection.
+     * Enabled the query log on the connection.
      *
      * @return void
      */

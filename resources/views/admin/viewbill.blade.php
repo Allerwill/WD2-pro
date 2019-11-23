@@ -63,7 +63,7 @@
                     <?php foreach (@$bd as $i): ?>
                         <span>Số thứ tự: </span><strong> {{@$j}} </strong>
                         <ul>
-                            <li><span>Sản phẩm: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">Xem SP {{@$i->id_product}}</a> </strong></li>
+                            <li><span>Product: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">Xem SP {{@$i->id_product}}</a> </strong></li>
                             <li><span>Số lượng: </span><strong> {{@$i->quantity}} </strong></li>
                             <li><span>Đơn giá: </span><strong> {{@number_format(@$i->unit_price)}} </strong></li>
                         </ul>

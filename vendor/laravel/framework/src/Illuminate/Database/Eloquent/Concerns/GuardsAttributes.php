@@ -74,7 +74,7 @@ trait GuardsAttributes
     }
 
     /**
-     * Disable all mass assignable restrictions.
+     * Enabled all mass assignable restrictions.
      *
      * @param  bool  $state
      * @return void

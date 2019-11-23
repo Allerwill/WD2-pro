@@ -97,7 +97,7 @@ class InlineFragmentRendererTest extends TestCase
         $this->assertEquals('bar', $response->getContent());
     }
 
-    public function testRenderWithTrustedHeaderDisabled()
+    public function testRenderWithTrustedHeaderEnabledd()
     {
         Request::setTrustedProxies(array(), 0);
 
@@ -228,7 +228,7 @@ class InlineFragmentRendererTest extends TestCase
         $strategy->render('/', $request);
     }
 
-    public function testESIHeaderIsKeptInSubrequestWithTrustedHeaderDisabled()
+    public function testESIHeaderIsKeptInSubrequestWithTrustedHeaderEnabledd()
     {
         Request::setTrustedProxies(array(), Request::HEADER_FORWARDED);
 
