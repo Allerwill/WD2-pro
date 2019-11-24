@@ -48,7 +48,7 @@
                             <input class="form-control" name="promotion_price" type="number" value="{{$x->promotion_price}}" >
                         </div>
                         <div class="form-group">
-                            <label>Hình ảnh:</label>
+                            <label>Picture:</label>
                             <image src="{{asset('images/product/'.$x->image)}}" style="max-height: 150px; margin: 10px;">
                             <input name="old_image" type="hidden" value="{{$x->image}}">
                             <input class="form-control" name="image" type="file">

@@ -21,7 +21,7 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Hình ảnh:</label>
+                            <label>Picture:</label>
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">

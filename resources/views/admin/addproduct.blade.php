@@ -41,7 +41,7 @@
                             <input class="form-control" name="promotion_price" type="number" value="0">
                         </div>
                         <div class="form-group">
-                            <label>Hình ảnh:</label>
+                            <label>Picture:</label>
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">

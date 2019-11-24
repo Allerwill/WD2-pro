@@ -25,7 +25,7 @@
                             <input class="form-control" name="name" type="text" placeholder="Nhập tên loại sản phẩm">
                         </div>
                         <div class="form-group">
-                            <label>Hình ảnh:</label>
+                            <label>Picture:</label>
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">

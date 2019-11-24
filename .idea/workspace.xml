@@ -3,35 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addcustomer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addcustomer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/addproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addproduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/addslide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addslide.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/addtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addtype.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adduser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adduser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/bills.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bills.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/customers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editcustomer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editcustomer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/editslide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editslide.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/edittype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/edittype.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/slides.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/slides.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/types.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/types.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewbill.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewbill.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewcustomer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewcustomer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewuser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewuser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/payment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1574490068007</updated>
       <workItem from="1574490070832" duration="1586000" />
-      <workItem from="1574495347812" duration="4750000" />
+      <workItem from="1574495347812" duration="5239000" />
+      <workItem from="1574589293039" duration="2016000" />
     </task>
     <servers />
   </component>
@@ -161,7 +143,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

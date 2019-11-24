@@ -22,7 +22,7 @@
                         <input type="hidden" name="id" value="{{$x->id}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Hình ảnh:</label>
+                            <label>Picture:</label>
                             <image src="{{asset('images/slide/'.$x->image)}}" style="max-height: 150px; margin: 10px;">
                             <input name="old_image" type="hidden" value="{{$x->image}}">
                             <input class="form-control" name="image" type="file">

@@ -78,7 +78,7 @@
                                             <tr role="row">
                                                 <th>ID</th>
                                                 <th>Name</th>
-                                                <th>Hình ảnh</th>
+                                                <th>Picture</th>
                                                 <th>Description</th>
                                                 <th>Arrange</th>
                                                 <th>Edit</th>

@@ -26,7 +26,7 @@
                             <input class="form-control" name="name" type="text" value="{{$x->name}}" placeholder="Nhập tên loại sản phẩm">
                         </div>
                         <div class="form-group">
-                            <label>Hình ảnh:</label>
+                            <label>Picture:</label>
                             <image src="{{asset('images/type/'.$x->image)}}" style="max-height: 150px; margin: 10px;">
                             <input name="old_image" type="hidden" value="{{$x->image}}">
                             <input class="form-control" name="image" type="file">

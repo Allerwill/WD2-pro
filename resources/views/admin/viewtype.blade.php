@@ -26,7 +26,7 @@
                         <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>
                     </p>
                     <p>
-                        <p>Hình ảnh: </p>
+                        <p>Picture: </p>
                         <img style="max-width: 500px;" src="{{asset('images/type/'.$x->image)}}" alt="{{$x->name}}"/>
                     </p>
                 </div>
