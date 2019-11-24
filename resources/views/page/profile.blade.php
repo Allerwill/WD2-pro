@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Họ tên:</label>
+                                    <label class="control-label">Full name:</label>
                                     <div class="controls">
                                         @if(Auth::check())
                                         <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="{{Auth::user()->full_name}}">
@@ -58,10 +58,10 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Số điện thoại:</label>
+                                    <label class="control-label">Phone number:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="phone" type="tel" id="inputCountry" placeholder="Số điện thoại" value="{{Auth::user()->phone}}">
+                                        <input name="phone" type="tel" id="inputCountry" placeholder="Phone number" value="{{Auth::user()->phone}}">
                                         @endif
                                     </div>
                                 </div>

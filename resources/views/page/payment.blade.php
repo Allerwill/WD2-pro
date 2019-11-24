@@ -77,7 +77,7 @@
                             <form class="form-horizontal" method="post" action="{{route('payment')}}">
                                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <div class="control-group">
-                                    <label class="control-label">Họ tên:</label>
+                                    <label class="control-label">Full name:</label>
                                     <div class="controls">
                                         @if(Auth::check())
                                         <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="{{Auth::user()->full_name}}">
@@ -107,23 +107,23 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Số điện thoại:</label>
+                                    <label class="control-label">Phone number:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="phone" type="tel" id="inputCountry" placeholder="Số điện thoại" value="{{Auth::user()->phone}}">
+                                        <input name="phone" type="tel" id="inputCountry" placeholder="Phone number" value="{{Auth::user()->phone}}">
                                         @else
-                                        <input name="phone" type="tel" id="inputCountry" placeholder="Số điện thoại" value="">
+                                        <input name="phone" type="tel" id="inputCountry" placeholder="Phone number" value="">
                                         @endif
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Ghi chú:</label>
+                                    <label class="control-label">Note:</label>
                                     <div class="controls">
-                                        <textarea name="note" id="inputCountry" placeholder="Ghi chú"></textarea>
+                                        <textarea name="note" id="inputCountry" placeholder="Note"></textarea>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Mã giảm giá:</label>
+                                    <label class="control-label">Coupon code:</label>
                                     <div class="controls">
                                         <input name="code" type="text" class="input-medium" placeholder="CODE">
                                     </div>

@@ -29,10 +29,10 @@
                         <span>Hình thức thanh toán: </span><strong> {{@$b->payment}} </strong>
                     </p>
                     <p>
-                        <span>Ghi chú: </span><p> {{@$b->note}} </p>
+                        <span>Note: </span><p> {{@$b->note}} </p>
                     </p>
                     <p>
-                        <span>Mã giảm giá: </span><strong> {{@$b->code}} </strong>
+                        <span>Coupon code: </span><strong> {{@$b->code}} </strong>
                     </p>
                     <p>
                         <span>Trạng thái: </span>

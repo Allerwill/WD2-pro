@@ -17,13 +17,13 @@
                         <span>Customer ID: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Họ tên: </span><strong> {{@$x->name}} </strong>
+                        <span>Full name: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
                         <span>Email: </span><strong> {{@$x->email}} </strong>
                     </p>
                     <p>
-                        <span>Số điện thoại: </span><strong> {{@$x->phone}} </strong>
+                        <span>Phone number: </span><strong> {{@$x->phone}} </strong>
                     </p>
                     <p>
                         <span>Address: </span><strong> {{@$x->address}} </strong>

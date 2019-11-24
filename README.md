@@ -1,7 +1,10 @@
 # WD2-pro
  Production Site
+ 
  Release: Nov, 24th, 2019
- This product is license to Allerwill Le
+ 
+ This product is license to LEQ Legends
+ 
  This is the final version was published for Our team Project
  Also, it completely is able to trademark.
  
