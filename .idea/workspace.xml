@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/testmail/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/testmail/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewbill.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewbill.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewcustomer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewcustomer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewuser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewuser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/payment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/ltw2p.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/ltw2p.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,6 +125,7 @@
       <workItem from="1574495347812" duration="5239000" />
       <workItem from="1574589293039" duration="2016000" />
       <workItem from="1574591708247" duration="6672000" />
+      <workItem from="1574930917630" duration="3105000" />
     </task>
     <servers />
   </component>
