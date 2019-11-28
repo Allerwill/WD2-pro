@@ -10,7 +10,7 @@
         <div class="col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <a href="{{route('types')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Thông tin loại sản phẩm
+                    <a href="{{route('types')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Product type infor
                 </div>
                 <div class="panel-body">
                     <p>

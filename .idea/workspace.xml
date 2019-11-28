@@ -3,16 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addproduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addslide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addslide.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addtype.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editslide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editslide.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/edittype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/edittype.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/types.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/types.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/115f51ec481e78a7edddb560a5d069dd89590dba.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/115f51ec481e78a7edddb560a5d069dd89590dba.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5c31cbf696b25cb2c11c6fce0d14d622dad2c86a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5c31cbf696b25cb2c11c6fce0d14d622dad2c86a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6429ea1232a9d2b3dc60676eb4342434f47ee9f9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6429ea1232a9d2b3dc60676eb4342434f47ee9f9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/691386d70366adc6bb47158bb601d638cbd8fe9e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/691386d70366adc6bb47158bb601d638cbd8fe9e.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +93,6 @@
   </component>
   <component name="ProjectId" id="1U0OVHoJ3KOv0MgArCk9D8lqrMa" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -132,6 +127,7 @@
       <workItem from="1574490070832" duration="1586000" />
       <workItem from="1574495347812" duration="5239000" />
       <workItem from="1574589293039" duration="2016000" />
+      <workItem from="1574954855178" duration="737000" />
     </task>
     <servers />
   </component>
