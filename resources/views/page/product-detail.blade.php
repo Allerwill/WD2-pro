@@ -26,8 +26,8 @@
                                     @if($product_detail->promotion_price == 0)
                                     <p>Price: <?php echo number_format($product_detail->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                     @else
-                                    <p>Price: <s><?php echo number_format($product_detail->unit_price); ?></s>{{@Session::get('unit')->value}}<br></p>
-                                    <p>Only: <?php echo number_format($product_detail->promotion_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Original Price: <s> $<?php echo number_format($product_detail->unit_price); ?></s>{{@Session::get('unit')->value}}<br></p>
+                                    <p style="font-size: 20px;">Now Only: $<?php echo number_format($product_detail->promotion_price); ?>{{@Session::get('unit')->value}}</p>
                                     @endif
                                 </label>    
                             </div>

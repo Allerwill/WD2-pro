@@ -113,11 +113,11 @@
                                     @if($p->promotion_price==0)
                                     <p>Giá: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                     @else
-                                    <p style="text-decoration: line-through;">Giá: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p style="text-decoration: line-through;">Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                     <p>Chỉ còn: <?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
                                     @endif
                                 </div>
-                                <a href="{{route('product-detail',@$p->id)}}" class="btn"><i class="icon-zoom-in"></i> Xem thêm</a>
+                                <a href="{{route('product-detail',@$p->id)}}" class="btn"><i class="icon-zoom-in"></i> Learn more</a>
                                 <a href="{{route('addtocart',$p->id)}}" class="btn"><i class=" icon-shopping-cart"></i> Add to cart</a>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                                     </a>
                                     <br/><br/>
                                     <div class="content">
-                                        <a href="{{route('product-detail',@$p->id)}}" class="btn pull-left"><i class="icon-zoom-in"></i> Xem thêm</a>
+                                        <a href="{{route('product-detail',@$p->id)}}" class="btn pull-left"><i class="icon-zoom-in"></i> Learn more</a>
                                         <a href="{{route('addtocart',$p->id)}}" class="btn pull-right"><i class=" icon-shopping-cart"></i> Add to cart</a>
                                     </div>
                                     <br class="clr"/>

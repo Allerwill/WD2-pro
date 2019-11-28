@@ -55,8 +55,8 @@
                                                     @if($np->promotion_price==0)
                                                     <span class="pull-left">$<?php echo number_format($np->unit_price); ?></span>
                                                     @else
-                                                    <span class="pull-left"  style="text-decoration: line-through;">$<?php echo number_format($np->unit_price); ?></span>
-                                                    <span class="pull-right">$<?php echo number_format($np->promotion_price); ?></span>
+                                                    <span class="pull-left"  style="text-decoration: line-through;font-size: 15px;">$<?php echo number_format($np->unit_price); ?></span>
+                                                    <span class="pull-right" style="font-size: 20px;">$<?php echo number_format($np->promotion_price); ?></span>
                                                     @endif
                                                 </div>
                                             </div>

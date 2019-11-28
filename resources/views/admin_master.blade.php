@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="{{asset('images/sys/'.@$sys_logo->value)}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{@$sys_title->value}}">
-        <meta name="author" content="PL Minh Phú">
+        <meta name="author" content="Allerwill">
         <link href="{{asset('css/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/css/metisMenu.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/css/timeline.css')}}" rel="stylesheet">
