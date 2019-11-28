@@ -449,7 +449,7 @@ class AdminController extends Controller {
             $x->image = $req->old_image;
         }
         $x->save();
-        return redirect()->back()->with('message', 'Lưu thành công!');
+        return redirect()->back()->with('message', 'Save successfully!');
     }
 
     public function postEditproduct(Request $req) {
@@ -487,7 +487,7 @@ class AdminController extends Controller {
             $x->image = $req->old_image;
         }
         $x->save();
-        return redirect()->back()->with('message', 'Lưu thành công!');
+        return redirect()->back()->with('message', 'Save successfully!');
     }
 
     public function postEditslide(Request $req) {
@@ -510,7 +510,7 @@ class AdminController extends Controller {
             $x->image = $req->old_image;
         }
         $x->save();
-        return redirect()->back()->with('message', 'Lưu thành công!');
+        return redirect()->back()->with('message', 'Save successfully!');
     }
 
     public function postEditcustomer(Request $req) {
@@ -529,7 +529,7 @@ class AdminController extends Controller {
         $x->address = $req->address;
         $x->stt = $req->stt;
         $x->save();
-        return redirect()->back()->with('message', 'Lưu thành công!');
+        return redirect()->back()->with('message', 'Save successfully!');
     }
 
     //Delete
@@ -957,7 +957,7 @@ class AdminController extends Controller {
         $x->phone = $req->phone;
         $x->address = $req->address;
         $x->save();
-        return redirect()->back()->with('message', 'Lưu thành công!');
+        return redirect()->back()->with('message', 'Save successfully!');
     }
 
 }
