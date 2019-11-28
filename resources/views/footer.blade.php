@@ -11,8 +11,8 @@
                     <a href="{{@$sys_facebook->value}}" target="_blank"><img width="60" height="60" src="{{asset('images/sys/facebook.png')}}" title="facebook" alt="facebook"/></a>
                 <?php endif; ?>
                 <?php if (@$sys_instagram->stt == "ON"): ?>
-                    <a href="{{@$sys_instagram->value}}" target="_blank"><img width="60" height="60" src="{{asset('images/sys/instagram.png')}}" title="twitter" alt="instagram"/></a>
-                    <a href="https://www.linkedin.com/in/allerwill/" target="_blank"><img width="60" height="60" src="{{asset('images/sys/LinkedIn.jpg')}}" title="twitter" alt="instagram"/></a>
+                    <a href="{{@$sys_instagram->value}}" target="_blank"><img width="60" height="60" src="{{asset('images/sys/instagram.png')}}" title="instagram" alt="instagram"/></a>
+                    <a href="https://www.linkedin.com/in/allerwill/" target="_blank"><img width="60" height="60" src="{{asset('images/sys/LinkedIn.jpg')}}" title="Linkedin" alt="linkedin"/></a>
                 <?php endif; ?>
                 <?php if (@$sys_linkedin->stt == "ON"): ?>
                     <a href="{{@$sys_linkedin->value}}"><img width="60" height="60" src="{{asset('images/sys/LinkedIn.jpg')}}" title="linkedin" alt="linkedin"/></a>

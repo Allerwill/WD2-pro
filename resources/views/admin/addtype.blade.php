@@ -22,7 +22,7 @@
                         @include('mess')
                         <div class="form-group">
                             <label>Type name:</label>
-                            <input class="form-control" name="name" type="text" placeholder="Nhập tên loại sản phẩm">
+                            <input class="form-control" name="name" type="text" placeholder="Product type name">
                         </div>
                         <div class="form-group">
                             <label>Picture:</label>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="form-group">
                             <label>Description:</label>
-                            <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Nhập mô tả loại sản phẩm" rows="5"></textarea>
+                            <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Product type description" rows="5"></textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Add new</button>
                         <a href="{{route('types')}}" class="btn btn-default">Cancel</a>

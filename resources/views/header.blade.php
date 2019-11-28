@@ -42,7 +42,7 @@
                     <div class="row" style="margin: 20px; float:right;">
                         @if(Session::has('cart'))
                         <div class="dropdown-mp">
-                            <button class="dropbtn-mp btn">Cart: {{Session('cart')->totalQty}} sản phẩm</button>
+                            <button class="dropbtn-mp btn">Cart: {{Session('cart')->totalQty}} products</button>
                             <div class="dropdown-content-mp">
                                 @foreach ($product_cart as $product)
                                 <a href="{{route('product-detail',@$product['item']['id'])}}" title="{{$product['item']['name']}} - {{number_format($product['item']['unit_price'])}}đ">
@@ -50,17 +50,17 @@
                                 </a>
                                 <span> X {{$product['qty']}}</span>
                                 <span> = {{number_format($product['item']['unit_price']*$product['qty'])}}đ. </span>
-                                <a class="btn" href="{{route('addtocart',$product['item']['id'])}}" title="Tăng 1"><i class="icon-plus"></i></a>
-                                <a class="btn" href="{{route('reducecart',$product['item']['id'])}}" title="Giảm 1"><i class="icon-minus"></i></a>
+                                <a class="btn" href="{{route('addtocart',$product['item']['id'])}}" title="add 1"><i class="icon-plus"></i></a>
+                                <a class="btn" href="{{route('reducecart',$product['item']['id'])}}" title="reduce 1"><i class="icon-minus"></i></a>
                                 <a class="btn" href="{{route('deletecart',$product['item']['id'])}}" title="Delete all"><i class="icon-remove icon-white"></i></a>
                                 <hr>
                                 @endforeach
-                                <a class="btn" href="{{route('payment')}}">Tổng cộng: {{number_format(Session('cart')->totalPrice)}}đ. Pay now!</a>
+                                <a class="btn" href="{{route('payment')}}">Total: {{number_format(Session('cart')->totalPrice)}}đ. >>> Pay now!</a>
                             </div>
                         </div>
                         @else
                         <div class="dropdown" style="float:right;">
-                            <button class="dropbtn btn">Giỏ Hàng: Trống</button>
+                            <button class="dropbtn btn">Cart: Empty</button>
                         </div>
                         @endif
                     </div>

@@ -14,10 +14,10 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        <span>Mã sản phẩm: </span><strong> {{@$x->id}} </strong>
+                        <span>Product id: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Product types: </span><strong> {{@$x->name}} </strong>
+                        <span>Product name: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
                         <span>Product types: </span><strong> <a href="{{route('viewtype',@$x->id_type)}}">Xem loại SP {{@$x->id_type}}</a> </strong>

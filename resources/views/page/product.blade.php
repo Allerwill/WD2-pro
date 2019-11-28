@@ -11,7 +11,7 @@
                 </ul>
                 <form class="form-inline navbar-search" method="post" action="{{route('search')}}" style="float:right;">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-                    <input name="keysearch" type="text" value="{{Session('keysearch')}}" placeholder="Tìm sản phẩm"/>
+                    <input name="keysearch" type="text" value="{{Session('keysearch')}}" placeholder="Search product"/>
                     <input class="btn" type="submit" value="Tìm">
                 </form>
                 <form class="form-inline navbar-search" method="post" action="{{route('sort')}}">
@@ -60,35 +60,35 @@
                             echo 'selected="true"';
                         }
                         ?>
-                                >9 sản phẩm trên trang</option>
+                                >9 products per page</option>
                         <option value="12"
                         <?php
                         if (@Session::get('perpage') == "12") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >12 sản phẩm trên trang</option>
+                                >12 products per page</option>
                         <option value="24"
                         <?php
                         if (@Session::get('perpage') == "24") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >24 sản phẩm trên trang</option>
+                                >24 products per page</option>
                         <option value="100"
                         <?php
                         if (@Session::get('perpage') == "100") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >100 sản phẩm trên trang</option>
+                                >100 products per page</option>
                         <option value="500"
                         <?php
                         if (@Session::get('perpage') == "500") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >500 sản phẩm trên trang</option>
+                                >500 products per page</option>
                     </select>
                     <input class="btn" type="submit" value="Lọc">
                 </form>
@@ -118,7 +118,7 @@
                                     @endif
                                 </div>
                                 <a href="{{route('product-detail',@$p->id)}}" class="btn"><i class="icon-zoom-in"></i> Xem thêm</a>
-                                <a href="{{route('addtocart',$p->id)}}" class="btn"><i class=" icon-shopping-cart"></i> Vào giỏ</a>
+                                <a href="{{route('addtocart',$p->id)}}" class="btn"><i class=" icon-shopping-cart"></i> Add to cart</a>
                             </div>
                         </div>
                         <hr class="soft"/>
@@ -138,7 +138,7 @@
                                     <br/><br/>
                                     <div class="content">
                                         <a href="{{route('product-detail',@$p->id)}}" class="btn pull-left"><i class="icon-zoom-in"></i> Xem thêm</a>
-                                        <a href="{{route('addtocart',$p->id)}}" class="btn pull-right"><i class=" icon-shopping-cart"></i> Vào giỏ</a>
+                                        <a href="{{route('addtocart',$p->id)}}" class="btn pull-right"><i class=" icon-shopping-cart"></i> Add to cart</a>
                                     </div>
                                     <br class="clr"/>
                                     <div class="content" style="height:100px;">

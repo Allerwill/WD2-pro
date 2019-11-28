@@ -22,7 +22,7 @@
                         @include('mess')
                         <div class="form-group">
                             <label>Type name:</label>
-                            <input class="form-control" name="name" type="text" placeholder="Nhập tên sản phẩm" >
+                            <input class="form-control" name="name" type="text" placeholder="Product name" >
                         </div>
                         <div class="form-group">
                             <label>Types:</label>

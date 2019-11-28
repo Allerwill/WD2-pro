@@ -38,7 +38,7 @@
                 <!-- Sidebar end=============================================== -->
                 <div class="span9">		
                     <div class="well well-small">
-                        <h4>Mới nhất</h4>
+                        <h4>Latest products</h4>
                         <div class="row-fluid">
                             <div id="featured" class="carousel slide">
                                 <div class="thumbnails">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <h4>Đang Sales</h4>
+                    <h4>On Sale</h4>
                     <ul class="thumbnails">
                         @foreach($sale_product as $sp)
                         <li class="span3">

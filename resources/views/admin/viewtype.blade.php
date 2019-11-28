@@ -14,10 +14,10 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        <span>Mã loại sản phẩm: </span><strong> {{@$x->id}} </strong>
+                        <span>Product type id: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Product types name: </span><strong> {{@$x->name}} </strong>
+                        <span>Product type name: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
                         <span>Description: </span><span> <?php echo @$x->description; ?> </span>

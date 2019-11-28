@@ -6,8 +6,8 @@
             @include('menu')
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
-                    <li><a href="{{route('allproduct')}}">Sản phẩm</a> <span class="divider">/</span></li>
+                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
+                    <li><a href="{{route('allproduct')}}">Product</a> <span class="divider">/</span></li>
                     <li class="active"><?php echo $product_detail->name; ?></li>
                 </ul>	
                 <div class="row">	  
@@ -18,16 +18,16 @@
                     </div>
                     <div class="span6">
                         <h3><?php echo $product_detail->name; ?></h3>
-                        <small><?php echo "Ngày: ". date(@Session::get('date')->value, strtotime($product_detail->updated_at)); ?></small>
+                        <small><?php echo "Date: ". date(@Session::get('date')->value, strtotime($product_detail->updated_at)); ?></small>
                         <hr class="soft"/>
                         <form class="form-horizontal qtyFrm">
                             <div class="control-group">
                                 <label class="control-label">
                                     @if($product_detail->promotion_price == 0)
-                                    <p>Giá bán: <?php echo number_format($product_detail->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Price: <?php echo number_format($product_detail->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                     @else
-                                    <p>Giá bán: <s><?php echo number_format($product_detail->unit_price); ?></s>{{@Session::get('unit')->value}}<br></p>
-                                    <p>Chỉ còn: <?php echo number_format($product_detail->promotion_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Price: <s><?php echo number_format($product_detail->unit_price); ?></s>{{@Session::get('unit')->value}}<br></p>
+                                    <p>Only: <?php echo number_format($product_detail->promotion_price); ?>{{@Session::get('unit')->value}}</p>
                                     @endif
                                 </label>    
                             </div>
@@ -36,8 +36,8 @@
                     </div>
                     <div class="span9">
                         <ul id="productDetail" class="nav nav-tabs">
-                            <li class="active"><a href="#home" data-toggle="tab">Chi tiết sản phẩm</a></li>
-                            <li><a href="#profile" data-toggle="tab">Sản phẩm liên quan</a></li>
+                            <li class="active"><a href="#home" data-toggle="tab">Product details</a></li>
+                            <li><a href="#profile" data-toggle="tab">Related products</a></li>
                         </ul>
                         <div id="myTabContent" class="tab-content">
                             <div class="tab-pane fade active in" id="home">
@@ -55,7 +55,7 @@
                                             </div>
                                             <div class="" style="height: 150px;">
                                                 <h3><a href="{{route('product-detail',@$p->id)}}"><?php echo $p->name; ?></a></h3>	
-                                                <h4>Giá: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</h4>
+                                                <h4>Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</h4>
                                             </div>
                                         </div>
                                         <hr class="soft"/>
