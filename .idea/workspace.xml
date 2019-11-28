@@ -3,12 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/115f51ec481e78a7edddb560a5d069dd89590dba.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/115f51ec481e78a7edddb560a5d069dd89590dba.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/5c31cbf696b25cb2c11c6fce0d14d622dad2c86a.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5c31cbf696b25cb2c11c6fce0d14d622dad2c86a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6429ea1232a9d2b3dc60676eb4342434f47ee9f9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6429ea1232a9d2b3dc60676eb4342434f47ee9f9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/691386d70366adc6bb47158bb601d638cbd8fe9e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/691386d70366adc6bb47158bb601d638cbd8fe9e.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/about/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/about/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/image/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/image/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/link/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/link/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/scayt/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorFullColor/plugins/scayt/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorStandardButton/plugins/image/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorStandardButton/plugins/image/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorStandardButton/plugins/link/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorStandardButton/plugins/link/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CKEditorStandardButton/plugins/scayt/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/CKEditorStandardButton/plugins/scayt/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/1Ls8Ry4XK03OIqO4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/70l4zTPp2YxFlgyx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/9WoQ1omDblbxlKUb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/Iq1No9CGEft9rekV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/LEA3VKsbMnf6reaw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/LyoBo3Vip4WlORJj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/QgVXHYi0HJDR2zXx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/YXL7xwQzb9TXS3vo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/gn0gkSdB7S93ixrA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/hbVvA85clAN7L4Ff.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/jOi7v5S4To0t8NLk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/kTMQsfqqFvFvEAXa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/khfoQRRJSYkLWgUK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/m1L9Uy81tqIe1b7z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/op4k9oKFl8nD0jPW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/tEUlxMz2LPeX8TUV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/product/yBHyoNGdVDGvaDpp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewbill.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewbill.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +149,7 @@
       <workItem from="1574490070832" duration="1586000" />
       <workItem from="1574495347812" duration="5239000" />
       <workItem from="1574589293039" duration="2016000" />
-      <workItem from="1574954855178" duration="737000" />
+      <workItem from="1574954855178" duration="2481000" />
     </task>
     <servers />
   </component>

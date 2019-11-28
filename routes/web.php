@@ -10,117 +10,117 @@ Route::get('index.html', [
     'uses' => 'PageController@getIndex'
 ]);
 
-Route::get('san-pham.html', [
+Route::get('product.html', [
     'as' => 'product',
     'uses' => 'PageController@getProduct'
 ]);
 
-Route::get('tat-ca-san-pham.html', [
+Route::get('all-product.html', [
     'as' => 'allproduct',
     'uses' => 'PageController@getAllProduct'
 ]);
 
-Route::get('loai-san-pham/loai-{idtype}.html', [
+Route::get('product-type/type-{idtype}.html', [
     'as' => 'product-type',
     'uses' => 'PageController@getProductType'
 ]);
 
-Route::post('tim-kiem.html', [
+Route::post('search.html', [
     'as' => 'search',
     'uses' => 'PageController@postSearch'
 ]);
 
-Route::post('sap-xep.html', [
+Route::post('sort.html', [
     'as' => 'sort',
     'uses' => 'PageController@postSort'
 ]);
 
-Route::get('chi-tiet/san-pham-{id}.html', [
+Route::get('product-detail/product-{id}.html', [
     'as' => 'product-detail',
     'uses' => 'PageController@getProductDetail'
 ]);
 
-Route::get('lien-he.html', [
+Route::get('contact.html', [
     'as' => 'contact',
     'uses' => 'PageController@getContact'
 ]);
 
-Route::get('gioi-thieu.html', [
+Route::get('about-us.html', [
     'as' => 'about',
     'uses' => 'PageController@getAbout'
 ]);
 
-Route::get('thanh-toan.html', [
+Route::get('payment.html', [
     'as' => 'payment',
     'uses' => 'PageController@getPayment'
 ]);
 
-Route::post('thanh-toan.html', [
+Route::post('payment.html', [
     'as' => 'payment',
     'uses' => 'PageController@postPayment'
 ]);
 
-Route::get('dang-nhap.html', [
+Route::get('login.html', [
     'as' => 'login',
     'uses' => 'PageController@getLogin'
 ]);
 
-Route::get('dang-xuat.html', [
+Route::get('logout.html', [
     'as' => 'logout',
     'uses' => 'PageController@getLogout'
 ]);
 
-Route::post('dang-nhap.html', [
+Route::post('login.html', [
     'as' => 'login',
     'uses' => 'PageController@postLogin'
 ]);
 
-Route::get('dang-ky.html', [
+Route::get('register.html', [
     'as' => 'register',
     'uses' => 'PageController@getRegister'
 ]);
 
-Route::post('dang-ky.html', [
+Route::post('register.html', [
     'as' => 'register',
     'uses' => 'PageController@postRegister'
 ]);
 
-Route::get('lay-mat-khau.html', [
+Route::get('repass.html', [
     'as' => 'repass',
     'uses' => 'PageController@getRepass'
 ]);
 
-Route::get('them-vao-gio/them-mot-{id}.html', [
+Route::get('addtocart/add-one-{id}.html', [
     'as' => 'addtocart',
     'uses' => 'PageController@getAddToCart'
 ]);
 
-Route::get('xoa-khoi-gio/xoa-{id}.html', [
+Route::get('deletecart/delete-{id}.html', [
     'as' => 'deletecart',
     'uses' => 'PageController@getDeleteCart'
 ]);
 
-Route::get('giam-bot-gio/tru-mot-{id}.html', [
+Route::get('reducecart/desc-one-{id}.html', [
     'as' => 'reducecart',
     'uses' => 'PageController@getReduceCart'
 ]);
 
-Route::get('thong-tin-tai-khoan.html', [
+Route::get('profile.html', [
     'as' => 'profile',
     'uses' => 'PageController@getProfile'
 ]);
 
-Route::post('thong-tin-tai-khoan.html', [
+Route::post('profile.html', [
     'as' => 'profile',
     'uses' => 'PageController@postProfile'
 ]);
 
-Route::get('doi-mat-khau.html', [
+Route::get('repass.html', [
     'as' => 'repass',
     'uses' => 'PageController@getRepass'
 ]);
 
-Route::post('doi-mat-khau.html', [
+Route::post('repass.html', [
     'as' => 'repass',
     'uses' => 'PageController@postRepass'
 ]);
@@ -129,7 +129,7 @@ Route::post('doi-mat-khau.html', [
 //
 //*ADMIN SYSTEM DATABASE
 //
-Route::get('admin', [
+Route::get('bigboss', [
     'as' => 'dashboard',
     'uses' => 'AdminController@getDashboard'
 ]);
@@ -414,17 +414,17 @@ Route::post('admin/syssocial.html', [
     'uses' => 'AdminController@setSyssocial'
 ]);
 
-Route::get('admin/dang-nhap-admin.html', [
+Route::get('admin/login-admin.html', [
     'as' => 'loginadmin',
     'uses' => 'AdminController@getLogin'
 ]);
 
-Route::post('admin/dang-nhap-admin.html', [
+Route::post('admin/login-admin.html', [
     'as' => 'loginadmin',
     'uses' => 'AdminController@postLogin'
 ]);
 
-Route::get('admin/dang-xuat-admin.html', [
+Route::get('admin/logout-admin.html', [
     'as' => 'logoutadmin',
     'uses' => 'AdminController@getLogout'
 ]);

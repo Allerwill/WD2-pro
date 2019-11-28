@@ -10,7 +10,7 @@
         <div class="col-lg-6">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <a href="{{route('bills')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Thông tin hóa đơn
+                    <a href="{{route('bills')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Invoice infor
                 </div>
                 <div class="panel-body">
                     <p>

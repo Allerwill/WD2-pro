@@ -9,7 +9,7 @@ CKEDITOR.plugins.setLang( 'image', 'vi', {
 	button2Img: 'Bạn có muốn chuyển nút bấm bằng ảnh được chọn thành ảnh?',
 	hSpace: 'Khoảng đệm ngang',
 	img2Button: 'Bạn có muốn chuyển đổi ảnh được chọn thành nút bấm bằng ảnh?',
-	infoTab: 'Thông tin của ảnh',
+	infoTab: 'Picture infor',
 	linkTab: 'Tab liên kết',
 	lockRatio: 'Giữ nguyên tỷ lệ',
 	menu: 'Thuộc tính của ảnh',

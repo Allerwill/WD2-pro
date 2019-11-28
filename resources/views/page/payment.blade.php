@@ -71,7 +71,7 @@
                 @endif
 
                 <table class="table table-bordered">
-                    <tr><th>Thông tin hóa đơn</th></tr>
+                    <tr><th>Invoice infor</th></tr>
                     <tr> 
                         <td>
                             <form class="form-horizontal" method="post" action="{{route('payment')}}">

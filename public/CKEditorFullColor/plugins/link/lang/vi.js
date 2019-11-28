@@ -25,7 +25,7 @@ CKEDITOR.plugins.setLang( 'link', 'vi', {
 	emailBody: 'Nội dung thông điệp',
 	emailSubject: 'Tiêu đề thông điệp',
 	id: 'Định danh',
-	info: 'Thông tin liên kết',
+	info: 'Link infor',
 	langCode: 'Mã ngôn ngữ',
 	langDir: 'Hướng ngôn ngữ',
 	langDirLTR: 'Trái sang phải (LTR)',

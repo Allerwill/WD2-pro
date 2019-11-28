@@ -11,7 +11,7 @@
                     <li class="active">{{Auth::user()->full_name}}</li>
                 </ul>
                 <table class="table table-bordered">
-                    <tr><th>Thông tin tài khoản</th></tr>
+                    <tr><th>Account infor</th></tr>
                     <tr> 
                         <td>
                             <form class="form-horizontal" action="{{route('profile')}}" method="post">
