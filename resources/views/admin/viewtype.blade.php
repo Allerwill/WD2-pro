@@ -23,7 +23,7 @@
                         <span>Description: </span><span> <?php echo @$x->description; ?> </span>
                     </p>
                     <p>
-                        <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>
+                        <span>Status: </span><strong> {{@$x->stt}} </strong>
                     </p>
                     <p>
                         <p>Picture: </p>

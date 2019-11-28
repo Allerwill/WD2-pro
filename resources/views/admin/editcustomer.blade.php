@@ -38,7 +38,7 @@
                             <input class="form-control" name="address" type="text" placeholder="Nhập địa chỉ" value="{{$x->address}}">
                         </div>
                         <div class="form-group">
-                            <label>Trạng thái:</label>
+                            <label>Status:</label>
                             <select name="stt" class="form-control">
                                 <?php if ($x->stt == "ON"): ?>
                                     <option value="ON" selected="true">ON</option>
@@ -49,8 +49,8 @@
                                 <?php endif; ?>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-default">Lưu lại</button>
-                        <a href="{{route('customers')}}" class="btn btn-default">Hủy bỏ</a>
+                        <button type="submit" class="btn btn-default">Save</button>
+                        <a href="{{route('customers')}}" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

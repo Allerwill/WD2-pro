@@ -32,7 +32,7 @@
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">
-                            <label>Trạng thái:</label>
+                            <label>Status:</label>
                             <select name="stt" class="form-control">
                                 <?php if ($x->stt == "ON"): ?>
                                     <option value="ON" selected="true">ON</option>
@@ -47,8 +47,8 @@
                             <label>Description:</label>
                             <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Nhập mô tả loại sản phẩm" rows="5">{{$x->description}}</textarea>
                         </div>
-                        <button type="submit" class="btn btn-default">Lưu lại</button>
-                        <a href="{{route('types')}}" class="btn btn-default">Hủy bỏ</a>
+                        <button type="submit" class="btn btn-default">Save</button>
+                        <a href="{{route('types')}}" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

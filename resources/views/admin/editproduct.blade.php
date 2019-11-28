@@ -12,7 +12,7 @@
                 <div class="panel-heading">
                     <div class="form-group input-group">
                         <span class="input-group-addon left"></span>
-                        <span class="input-group-addon"><strong>Chỉnh sửa :: {{$x->id}} - {{$x->name}}</strong> - <i class="fa  fa-info"></i></span>
+                        <span class="input-group-addon"><strong>Edit :: {{$x->id}} - {{$x->name}}</strong> - <i class="fa  fa-info"></i></span>
                         <span class="input-group-addon right"></span>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                         @include('mess')
                         <div class="form-group">
                             <label>Type name:</label>
-                            <input class="form-control" name="name" value="{{$x->name}}" type="text" placeholder="Nhập tên sản phẩm" >
+                            <input class="form-control" name="name" value="{{$x->name}}" type="text" placeholder="Product name" >
                         </div>
                         <div class="form-group">
                             <label>Types:</label>
@@ -40,11 +40,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Đơn giá:</label>
+                            <label>Unit price:</label>
                             <input class="form-control" name="unit_price" type="number" value="{{$x->unit_price}}">
                         </div>
                         <div class="form-group">
-                            <label>Giá sale:</label>
+                            <label>Promotion price:</label>
                             <input class="form-control" name="promotion_price" type="number" value="{{$x->promotion_price}}" >
                         </div>
                         <div class="form-group">
@@ -54,31 +54,31 @@
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">
-                            <label>Đơn vị:</label>
+                            <label>Unit:</label>
                             <select name="unit" class="form-control">
-                                <?php if ($x->unit == "cái"): ?>
-                                    <option value="cái" selected="true">Cái</option>
-                                    <option value="hộp">Hộp</option>
+                                <?php if ($x->unit == "Pound"): ?>
+                                    <option value="pound" selected="true">Pound</option>
+                                    <option value="liter">Liter</option>
                                 <?php else: ?>
-                                    <option value="cái">Cái</option>
-                                    <option value="hộp" selected="true">Hộp</option>
+                                    <option value="pound">Pound</option>
+                                    <option value="liter" selected="true">Liter</option>
                                 <?php endif; ?>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Đánh dấu Hot:</label>
+                            <label>Mark as Trending:</label>
                             <select name="new" class="form-control">
                                 <?php if ($x->new == "0"): ?>
-                                    <option value="0" selected="true">Có</option>
-                                    <option value="1">Không</option>
+                                    <option value="0" selected="true">Yes</option>
+                                    <option value="1">No</option>
                                 <?php else: ?>
-                                    <option value="0">Có</option>
-                                    <option value="1" selected="true">Không</option>
+                                    <option value="0">Yes</option>
+                                    <option value="1" selected="true">No</option>
                                 <?php endif; ?>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Trạng thái:</label>
+                            <label>Status:</label>
                             <select name="stt" class="form-control">
                                 <?php if ($x->stt == "ON"): ?>
                                     <option value="ON" selected="true">ON</option>
@@ -91,10 +91,10 @@
                         </div>
                         <div class="form-group">
                             <label>Description:</label>
-                            <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Nhập mô tả sản phẩm" rows="5">{{$x->description}}</textarea>
+                            <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Product description" rows="5">{{$x->description}}</textarea>
                         </div>
-                        <button type="submit" class="btn btn-default">Lưu lại</button>
-                        <a href="{{route('products')}}" class="btn btn-default">Hủy bỏ</a>
+                        <button type="submit" class="btn btn-default">Save</button>
+                        <a href="{{route('products')}}" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

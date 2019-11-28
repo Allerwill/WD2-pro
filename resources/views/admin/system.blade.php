@@ -173,8 +173,8 @@
                                 <input class="form-control" name="instagram" type="text" value="{{@$instagram->value}}">
                             </div>
                             <div class="form-group">
-                                <label>{{@$google->name}}:</label>
-                                <input class="form-control" name="google" type="text" value="{{@$google->value}}">
+                                <label>{{@$sys_linkedin->name}}:</label>
+                                <input class="form-control" name="google" type="text" value="{{@$sys_linkedin->value}}">
                             </div>
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Setting</button>
 

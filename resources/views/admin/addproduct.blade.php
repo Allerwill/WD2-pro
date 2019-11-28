@@ -45,21 +45,21 @@
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">
-                            <label>Đơn vị:</label>
+                            <label>Unit:</label>
                             <select name="unit" class="form-control">
-                                <option value="cái">Cái</option>
-                                <option value="hộp">Hộp</option>
+                                <option value="Pound">Pound</option>
+                                <option value="Liter">Liter</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Đánh dấu Hot:</label>
+                            <label>Mark as Trending:</label>
                             <select name="new" class="form-control">
-                                <option value="0">Có</option>
-                                <option value="1">Không</option>
+                                <option value="0">Yes</option>
+                                <option value="1">No</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Trạng thái:</label>
+                            <label>Status:</label>
                             <select name="stt" class="form-control">
                                 <option value="ON">ON</option>
                                 <option value="OFF">OFF</option>
@@ -67,10 +67,10 @@
                         </div>
                         <div class="form-group">
                             <label>Description:</label>
-                            <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Nhập mô tả sản phẩm" rows="5"></textarea>
+                            <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Product description" rows="5"></textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Add new</button>
-                        <a href="{{route('products')}}" class="btn btn-default">Hủy bỏ</a>
+                        <a href="{{route('products')}}" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

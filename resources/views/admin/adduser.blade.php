@@ -53,14 +53,14 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Trạng thái:</label>
+                            <label>Status:</label>
                             <select name="stt" class="form-control">
                                 <option value="ON">ON</option>
                                 <option value="OFF">OFF</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-default">Add new</button>
-                        <a href="{{route('users')}}" class="btn btn-default">Hủy bỏ</a>
+                        <a href="{{route('users')}}" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

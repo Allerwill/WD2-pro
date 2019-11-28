@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider {
             $sys_footer = System::where('key', 'footer')->where('stt', 'ON')->first();
             $sys_facebook = System::where('key', 'facebook')->where('stt', 'ON')->first();
             $sys_instagram = System::where('key', 'instagram')->where('stt', 'ON')->first();
-            $sys_google = System::where('key', 'google')->where('stt', 'ON')->first();
+            $sys_linkedin = System::where('key', 'google')->where('stt', 'ON')->first();
             //get Cart
             if (Session('cart')) {
                 $oldCart = Session::get('cart');
@@ -43,14 +43,14 @@ class AppServiceProvider extends ServiceProvider {
                     'totalQty' => $cart->totalQty, 'sys_logo' => @$sys_logo, 'sys_title' => @$sys_title,
                     'sys_header' => @$sys_header, 'sys_footer' => @$sys_footer,
                     'sys_facebook' => @$sys_facebook, 'sys_instagram' => @$sys_instagram,
-                    'sys_google' => @$sys_google
+                    '$sys_linkedin' => @$sys_linkedin
                 ]);
             } else {
                 $view->with([
                     'sys_logo' => @$sys_logo, 'sys_title' => @$sys_title,
                     'sys_header' => @$sys_header, 'sys_footer' => @$sys_footer,
                     'sys_facebook' => @$sys_facebook, 'sys_instagram' => @$sys_instagram,
-                    'sys_google' => @$sys_google
+                    '$sys_linkedin' => @$sys_linkedin
                 ]);
             }
         });

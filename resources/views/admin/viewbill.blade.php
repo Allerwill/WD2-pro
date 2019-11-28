@@ -14,7 +14,7 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        <span>Mã hóa đơn: </span><strong> {{@$b->id}} </strong>
+                        <span>Invoice ID: </span><strong> {{@$b->id}} </strong>
                     </p>
                     <p>
                         <span>Customer ID: </span><strong> <a href="{{route('viewcustomer',@$b->id_customer)}}">Xem KH {{@$b->id_customer}}</a> </strong>
@@ -26,30 +26,30 @@
                         <span>Total: </span><strong> {{number_format(@$b->total)}}đ </strong>
                     </p>
                     <p>
-                        <span>Hình thức thanh toán: </span><strong> {{@$b->payment}} </strong>
+                        <span>Payment method: </span><strong> {{@$b->payment}} </strong>
                     </p>
                     <p>
-                        <span>Ghi chú: </span><p> {{@$b->note}} </p>
+                        <span>Note: </span><p> {{@$b->note}} </p>
                     </p>
                     <p>
-                        <span>Mã giảm giá: </span><strong> {{@$b->code}} </strong>
+                        <span>Coupon: </span><strong> {{@$b->code}} </strong>
                     </p>
                     <p>
-                        <span>Trạng thái: </span>
+                        <span>Status: </span>
                         <?php if (@$b->stt == "0" || @$b->stt == ""): ?>
-                            <strong> Đang chờ xác nhận </strong>
+                            <strong> Waiting for confirm </strong>
                         <?php endif; ?>
                         <?php if (@$b->stt == "1"): ?>
-                            <strong> Đang giao hàng </strong>
+                            <strong> Delivering </strong>
                         <?php endif; ?>
                         <?php if (@$b->stt == "2"): ?>
-                            <strong> Đã thanh toán </strong>
+                            <strong> Paid </strong>
                         <?php endif; ?>
                     </p>
                 </div>
                 <div class="panel-footer">
-                    <p><span>Đã tạo:</span> {{@$b->created_at}}</p>
-                    <p><span>Cập nhật:</span> {{@$b->updated_at}}</p>
+                    <p><span>Created:</span> {{@$b->created_at}}</p>
+                    <p><span>Update:</span> {{@$b->updated_at}}</p>
                 </div>
             </div>
         </div>

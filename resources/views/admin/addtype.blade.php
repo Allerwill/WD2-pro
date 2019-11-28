@@ -29,7 +29,7 @@
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">
-                            <label>Trạng thái:</label>
+                            <label>Status:</label>
                             <select name="stt" class="form-control">
                                 <option value="ON">ON</option>
                                 <option value="OFF">OFF</option>
@@ -40,7 +40,7 @@
                             <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Nhập mô tả loại sản phẩm" rows="5"></textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Add new</button>
-                        <a href="{{route('types')}}" class="btn btn-default">Hủy bỏ</a>
+                        <a href="{{route('types')}}" class="btn btn-default">Cancel</a>
                     </form>
                 </div>
             </div>

@@ -31,7 +31,7 @@
                                     @endif
                                 </label>    
                             </div>
-                            <a class="btn" href="{{route('addtocart',$product_detail->id)}}"><i class="icon-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                            <a class="btn" href="{{route('addtocart',$product_detail->id)}}"><i class="icon-shopping-cart"></i> Add to cart</a>
                         </form>
                     </div>
                     <div class="span9">

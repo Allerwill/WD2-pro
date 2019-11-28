@@ -14,15 +14,15 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        <span>Mã tài khoản: </span><strong> {{@$x->id}} </strong>
+                        <span>Account ID: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Hoạt động: </span>
+                        <span>Activity: </span>
                         <?php
                         if (isset($x->remember_token) && $x->remember_token != "") {
-                            echo '<i class="fa fa-circle" style="color:#42b72a;"></i> Đang hoạt động';
+                            echo '<i class="fa fa-circle" style="color:#42b72a;"></i> Online';
                         } else {
-                            echo '<i class="fa fa-circle-o"></i> Gần nhất ' . @$x->updated_at;
+                            echo '<i class="fa fa-circle-o"></i> Nearest ' . @$x->updated_at;
                         }
                         ?>
                     </p>
@@ -45,12 +45,12 @@
                         <span>Account types: </span><strong> {{@$x->type}} </strong>
                     </p>
                     <p>
-                        <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>
+                        <span>Status: </span><strong> {{@$x->stt}} </strong>
                     </p>
                 </div>
                 <div class="panel-footer">
-                    <p><span>Đã tạo:</span> {{@$x->created_at}}</p>
-                    <p><span>Cập nhật:</span> {{@$x->updated_at}}</p>
+                    <p><span>Crated at:</span> {{@$x->created_at}}</p>
+                    <p><span>Update:</span> {{@$x->updated_at}}</p>
                 </div>
             </div>
         </div>

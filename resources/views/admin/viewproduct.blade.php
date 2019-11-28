@@ -38,7 +38,7 @@
                         <span>Hot: </span><strong> {{@$x->new}} </strong>
                     </p>
                     <p>
-                        <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>
+                        <span>Status: </span><strong> {{@$x->stt}} </strong>
                     </p>
                     <p>
                         <p>Picture: </p>

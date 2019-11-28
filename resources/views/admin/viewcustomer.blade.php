@@ -29,7 +29,7 @@
                         <span>Address: </span><strong> {{@$x->address}} </strong>
                     </p>
                     <p>
-                        <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>
+                        <span>Status: </span><strong> {{@$x->stt}} </strong>
                     </p>
                 </div>
                 <div class="panel-footer">

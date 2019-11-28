@@ -12,7 +12,7 @@
                 <div class="panel-heading">
                     <div class="form-group input-group">
                         <span class="input-group-addon left"></span>
-                        <span class="input-group-addon"><Strong>Chỉnh sửa tài khoản</Strong> - <i class="fa  fa-info"></i></span>
+                        <span class="input-group-addon"><Strong>Edit profile</Strong> - <i class="fa  fa-info"></i></span>
                         <span class="input-group-addon right"></span>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             <label>Nhập lại:</label>
                             <input class="form-control" name="repassword" type="password" placeholder="Nhập lại mật khẩu">
                         </div>
-                        <button type="submit" class="btn btn-default">Lưu lại</button>
+                        <button type="submit" class="btn btn-default">Save</button>
                     </form>
                 </div>
             </div>
