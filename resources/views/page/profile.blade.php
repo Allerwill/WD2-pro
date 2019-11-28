@@ -6,7 +6,7 @@
             @include('menu')
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
+                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
                     <li>Account <span class="divider">/</span></li>
                     <li class="active">{{Auth::user()->full_name}}</li>
                 </ul>

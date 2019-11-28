@@ -47,7 +47,7 @@
                                 <div class="control-group">
                                     <div class="controls">
                                         <br><br>
-                                        <span>Chưa có tài khoản? </span><a href="{{route('register')}}" style="text-decoration:underline">Đăng ký ngay.</a><br>
+                                        <span>Chưa có tài khoản? </span><a href="{{route('register')}}" style="text-decoration:underline">Register now!.</a><br>
                                         <span>Quên mật khẩu? </span><a href="{{route('repass')}}" style="text-decoration:underline">Lấy lại mật khẩu.</a>
                                     </div>
                                 </div>

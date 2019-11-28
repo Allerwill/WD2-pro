@@ -6,7 +6,7 @@
             @include('menu')
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
+                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
                     <li class="active">Giỏ hàng</li>
                 </ul>
                 
@@ -27,11 +27,11 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Sản phẩm</th>
-                            <th>Thông tin</th>
-                            <th>Đơn giá</th>
-                            <th>Số lượng</th>
-                            <th>Thành tiền</th>
+                            <th>Product</th>
+                            <th>Information</th>
+                            <th>Unit price</th>
+                            <th>Quantity</th>
+                            <th>Total amount</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -6,8 +6,8 @@
             @include('menu')
             <div class="span9" id="mainCol">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
-                    <li class="active">Thông tin</li>
+                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
+                    <li class="active">About</li>
                 </ul>
                 <?php echo @$sys_about->value; ?>
             </div>

@@ -17,32 +17,32 @@
                         <span class="btn"><a href="{{route('allproduct')}}">Product</a></span>
                     </li>
                     <li style="margin: 20px;">
-                        <span class="btn"><a href="{{route('about')}}">Thông tin</a></span>
+                        <span class="btn"><a href="{{route('about')}}">About Us</a></span>
                     </li>
                     <li style="margin: 20px;">
-                        <span class="btn"><a href="{{route('contact')}}">Liên hệ</a></span>
+                        <span class="btn"><a href="{{route('contact')}}">Contact Us</a></span>
                     </li>
                     @if(Auth::check())
                     <li class="dropdown-mp" style="margin: 20px;">
                         <span class="dropbtn-mp btn">Account</span>
                         <span class="dropdown-content-mp-s">
                             <a href="{{route('profile')}}">{{Auth::user()->full_name}}</a><br>
-                            <a href="{{route('logout')}}">Đăng xuất</a>
+                            <a href="{{route('logout')}}">Log out</a>
                         </span>
                     </li>
                     @else
                     <li class="dropdown-mp" style="margin: 20px;">
                         <span class="dropbtn-mp btn">Account</span>
                         <span class="dropdown-content-mp-s">
-                            <a href="{{route('login')}}">Đăng nhập</a><br>
-                            <a href="{{route('register')}}">Đăng ký</a>
+                            <a href="{{route('login')}}">Login</a><br>
+                            <a href="{{route('register')}}">Register an account</a>
                         </span>
                     </li>
                     @endif
                     <div class="row" style="margin: 20px; float:right;">
                         @if(Session::has('cart'))
                         <div class="dropdown-mp">
-                            <button class="dropbtn-mp btn">Giỏ Hàng: {{Session('cart')->totalQty}} sản phẩm</button>
+                            <button class="dropbtn-mp btn">Cart: {{Session('cart')->totalQty}} sản phẩm</button>
                             <div class="dropdown-content-mp">
                                 @foreach ($product_cart as $product)
                                 <a href="{{route('product-detail',@$product['item']['id'])}}" title="{{$product['item']['name']}} - {{number_format($product['item']['unit_price'])}}đ">
