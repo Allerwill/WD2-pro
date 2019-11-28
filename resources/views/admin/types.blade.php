@@ -80,7 +80,7 @@
                                                 <th>Name</th>
                                                 <th>Picture</th>
                                                 <th>Description</th>
-                                                <th>Arrange</th>
+                                                <th>Status</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                         </thead>

@@ -80,7 +80,7 @@
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Account types</th>
-                                                <th>Arrange</th>
+                                                <th>Status</th>
                                                 <th>Delete</th>
                                         </thead>
                                         <tbody>

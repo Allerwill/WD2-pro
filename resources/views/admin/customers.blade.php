@@ -79,7 +79,7 @@
                                                 <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Address</th>
-                                                <th>Arrange</th>
+                                                <th>Status</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                         </thead>

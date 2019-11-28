@@ -78,10 +78,10 @@
                                             <tr role="row">
                                                 <th>ID</th>
                                                 <th>Name</th>
-                                                <th>Hình</th>
-                                                <th>Giá</th>
+                                                <th>Image</th>
+                                                <th>Price</th>
                                                 <th>Sale</th>
-                                                <th>Arrange</th>
+                                                <th>Status</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                         </thead>

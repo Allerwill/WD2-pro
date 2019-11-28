@@ -607,7 +607,7 @@ class AdminController extends Controller {
         }
     }
 
-    //Set Arrange
+    //Set Status
     public function setSttType($id) {
         $x = ProductType::where('id', $id)->first();
         if ($x->stt == "ON") {

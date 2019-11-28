@@ -81,7 +81,7 @@
                                                 <th>Total</th>
                                                 <th>Order date</th>
                                                 <th>Payment method</th>
-                                                <th>Arrange</th>
+                                                <th>Status</th>
                                                 <th>View</th>
                                                 <th>Delete</th>
                                         </thead>

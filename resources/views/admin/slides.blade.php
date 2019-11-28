@@ -69,7 +69,7 @@
                                                 <th>ID</th>
                                                 <th>Product</th>
                                                 <th>Hình</th>
-                                                <th>Arrange</th>
+                                                <th>Status</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                         </thead>
