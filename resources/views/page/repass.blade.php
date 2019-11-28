@@ -7,10 +7,10 @@
             <div class="span9">
                 <ul class="breadcrumb">
                     <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
-                    <li class="active">Đổi mật khẩu</li>
+                    <li class="active">Change password</li>
                 </ul>
                 <table class="table table-bordered">
-                    <tr><th>Thay đổi mật khẩu</th></tr>
+                    <tr><th>Change password</th></tr>
                     <tr> 
                         <td>
                             <form class="form-horizontal" action="{{route('repass')}}" method="post">
@@ -38,20 +38,20 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Mật khẩu mới:</label>
+                                    <label class="control-label">New password:</label>
                                     <div class="controls">
-                                        <input name="password" type="password" id="inputCountry" placeholder="Mật khẩu mới" value="">
+                                        <input name="password" type="password" id="inputCountry" placeholder="New password" value="">
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Nhập lại mk:</label>
+                                    <label class="control-label">Confirm password:</label>
                                     <div class="controls">
-                                        <input name="repassword" type="password" id="inputCountry" placeholder="Nhập lại mật khẩu" value="">
+                                        <input name="repassword" type="password" id="inputCountry" placeholder="Confirm password" value="">
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
-                                        <button type="submit" class="btn">Thay đổi</button>
+                                        <button type="submit" class="btn">Change</button>
                                     </div>
                                 </div>
                             </form>				  

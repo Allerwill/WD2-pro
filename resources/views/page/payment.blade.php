@@ -7,7 +7,7 @@
             <div class="span9">
                 <ul class="breadcrumb">
                     <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
-                    <li class="active">Giỏ hàng</li>
+                    <li class="active">Cart</li>
                 </ul>
                 
                 @if(count($errors)>0)
@@ -48,7 +48,7 @@
                             </td>
                             <td>
                                 <div class="input-append">
-                                    <a class="btn" title="Đã xác nhận {{@$payment['qty']}}"><i class="icon-check">{{@$payment['qty']}}</i></a>
+                                    <a class="btn" title="Confirmed {{@$payment['qty']}}"><i class="icon-check">{{@$payment['qty']}}</i></a>
                                     <a class="btn" href="{{route('reducecart',@$payment['item']['id'])}}" title="-1"><i class="icon-minus"></i></a>
                                     <a class="btn" href="{{route('addtocart',@$payment['item']['id'])}}" title="+1"><i class="icon-plus"></i></a>
                                     <a class="btn btn-danger" href="{{route('deletecart',@$payment['item']['id'])}}" title="del"><i class="icon-remove icon-white"></i></a>
@@ -58,7 +58,7 @@
                         </tr>
                         @endforeach
                         <tr>
-                            <th>Tổng cộng:</th>
+                            <th>Total:</th>
                             <th></th>
                             <th>
 
@@ -107,25 +107,25 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Số điện thoại:</label>
+                                    <label class="control-label">Phone number:</label>
                                     <div class="controls">
                                         @if(Auth::check())
-                                        <input name="phone" type="tel" id="inputCountry" placeholder="Số điện thoại" value="{{Auth::user()->phone}}">
+                                        <input name="phone" type="tel" id="inputCountry" placeholder="Phone number" value="{{Auth::user()->phone}}">
                                         @else
-                                        <input name="phone" type="tel" id="inputCountry" placeholder="Số điện thoại" value="">
+                                        <input name="phone" type="tel" id="inputCountry" placeholder="Phone number" value="">
                                         @endif
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Ghi chú:</label>
+                                    <label class="control-label">Note:</label>
                                     <div class="controls">
-                                        <textarea name="note" id="inputCountry" placeholder="Ghi chú"></textarea>
+                                        <textarea name="note" id="inputCountry" placeholder="Note"></textarea>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Mã giảm giá:</label>
+                                    <label class="control-label">Coupon:</label>
                                     <div class="controls">
-                                        <input name="code" type="text" class="input-medium" placeholder="CODE">
+                                        <input name="code" type="text" class="input-medium" placeholder="Coupon">
                                     </div>
                                 </div>
                                 <div class="control-group">

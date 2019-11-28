@@ -291,7 +291,7 @@ class AdminController extends Controller {
         $this->validate($req, [
             'name' => 'required',
                 ], [
-            'name.required' => 'Vui lòng nhập tên, ',
+            'name.required' => 'Please input your full name, ',
         ]);
         $x = new ProductType;
         $x->name = $req->name;
@@ -306,13 +306,13 @@ class AdminController extends Controller {
                 $file->move('images/type', $file_name);
                 $x->image = $file_name;
             } else {
-                return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                return redirect()->back()->with('message', 'Incorrect image format!');
             }
         } else {
             $x->image = "";
         }
         $x->save();
-        return redirect()->back()->with('message', 'Thêm thành công!');
+        return redirect()->back()->with('message', 'Added successfully!');
     }
 
     public function postAddproduct(Request $req) {
@@ -321,9 +321,9 @@ class AdminController extends Controller {
             'unit_price' => 'required',
             'promotion_price' => 'required'
                 ], [
-            'name.required' => 'Vui lòng nhập tên, ',
-            'unit_price.required' => 'Vui lòng nhập giá gốc, ',
-            'promotion_price.required' => 'Vui lòng nhập giá sale, '
+            'name.required' => 'Please enter your name, ',
+            'unit_price.required' => 'Please enter original price, ',
+            'promotion_price.required' => 'Please enter discount price, '
         ]);
         $x = new Product;
         $x->name = $req->name;
@@ -343,13 +343,13 @@ class AdminController extends Controller {
                 $file->move('images/product', $file_name);
                 $x->image = $file_name;
             } else {
-                return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!)');
             }
         } else {
             $x->image = "";
         }
         $x->save();
-        return redirect()->back()->with('message', 'Thêm thành công!');
+        return redirect()->back()->with('message', 'Added successfully!');
     }
 
     public function postAddslide(Request $req) {
@@ -365,13 +365,13 @@ class AdminController extends Controller {
                 $file->move('images/slide', $file_name);
                 $x->image = $file_name;
             } else {
-                return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!)');
             }
         } else {
             $x->image = "";
         }
         $x->save();
-        return redirect()->back()->with('message', 'Thêm thành công!');
+        return redirect()->back()->with('message', 'Added successfully!');
     }
 
     public function postAdduser(Request $req) {
@@ -381,14 +381,14 @@ class AdminController extends Controller {
             'fullname' => 'required',
             'repassword' => 'required|same:password'
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
-            'email.unique' => 'Email đã có người sử dụng, ',
-            'fullname.required' => 'Vui lòng nhập họ tên, ',
-            'repassword.same' => 'Mật khẩu không khớp nhau, ',
-            'password.required' => 'Vui lòng nhập mật khẩu, ',
-            'password.min' => 'Mật khẩu tối thiểu 6 ký tự, ̣',
-            'password.max' => 'Mật khẩu tối đa 20 ký tự.̣'
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid Email, ',
+            'email.unique' => 'The email is already existed, ',
+            'fullname.required' => 'Please input your full name, ',
+            'repassword.same' => 'Password is mismatch, ',
+            'password.required' => 'Please input your password, ',
+            'password.min' => 'The minimum length is 6 characters, ̣',
+            'password.max' => 'The maximum length is 20 characters.̣'
         ]);
         $x = new User;
         $x->full_name = $req->fullname;
@@ -399,7 +399,7 @@ class AdminController extends Controller {
         $x->type = $req->type;
         $x->stt = $req->stt;
         $x->save();
-        return redirect()->back()->with('message', 'Thêm thành công!');
+        return redirect()->back()->with('message', 'Added successfully!');
     }
 
     public function postAddcustomer(Request $req) {
@@ -407,10 +407,10 @@ class AdminController extends Controller {
             'email' => 'required|email|unique:users,email',
             'name' => 'required',
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
-            'email.unique' => 'Email đã có người sử dụng, ',
-            'name.required' => 'Vui lòng nhập họ tên, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid Email, ',
+            'email.unique' => 'The email is already existed, ',
+            'name.required' => 'Please input your full name, ',
         ]);
         $x = new Customer;
         $x->name = $req->name;
@@ -419,7 +419,7 @@ class AdminController extends Controller {
         $x->address = $req->address;
         $x->stt = "ON";
         $x->save();
-        return redirect()->back()->with('message', 'Thêm thành công!');
+        return redirect()->back()->with('message', 'Added successfully!');
     }
 
     //Post edit
@@ -427,7 +427,7 @@ class AdminController extends Controller {
         $this->validate($req, [
             'name' => 'required',
                 ], [
-            'name.required' => 'Vui lòng nhập tên, ',
+            'name.required' => 'Please input your full name, ',
         ]);
         $x = ProductType::where('id', '=', $req->id)->first();
         $x->name = $req->name;
@@ -443,7 +443,7 @@ class AdminController extends Controller {
                 $file->move('images/type', $file_name);
                 $x->image = $file_name;
             } else {
-                return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!).');
             }
         } else {
             $x->image = $req->old_image;
@@ -458,9 +458,9 @@ class AdminController extends Controller {
             'unit_price' => 'required',
             'promotion_price' => 'required'
                 ], [
-            'name.required' => 'Vui lòng nhập tên, ',
-            'unit_price.required' => 'Vui lòng nhập giá gốc, ',
-            'promotion_price.required' => 'Vui lòng nhập giá sale, '
+            'name.required' => 'Please input your full name, ',
+            'unit_price.required' => 'Please enter original price, ',
+            'promotion_price.required' => 'Please enter discount price, '
         ]);
         $x = Product::where('id', '=', $req->id)->first();
         $x->name = $req->name;
@@ -481,7 +481,7 @@ class AdminController extends Controller {
                 $file->move('images/product', $file_name);
                 $x->image = $file_name;
             } else {
-                return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!).');
             }
         } else {
             $x->image = $req->old_image;
@@ -504,7 +504,7 @@ class AdminController extends Controller {
                 $file->move('images/slide', $file_name);
                 $x->image = $file_name;
             } else {
-                return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!).');
             }
         } else {
             $x->image = $req->old_image;
@@ -518,9 +518,9 @@ class AdminController extends Controller {
             'email' => 'required|email',
             'name' => 'required',
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
-            'name.required' => 'Vui lòng nhập họ tên, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid picture format! ( *.png; *.jpg are accepted!)., ',
+            'name.required' => 'Please input your full name, ',
         ]);
         $x = Customer::where('id', '=', $req->id)->first();
         $x->name = $req->name;
@@ -539,7 +539,7 @@ class AdminController extends Controller {
             $n = $x->name;
             File::delete('images/type/' . $x->image);
             $x->delete();
-            return redirect()->back()->with('message', 'Đã xóa ' . $n . ' !');
+            return redirect()->back()->with('message', 'Deleted ' . $n . ' !');
         } else {
             return view('admin.loginadmin');
         }
@@ -551,7 +551,7 @@ class AdminController extends Controller {
             $n = $x->name;
             File::delete('images/product/' . $x->image);
             $x->delete();
-            return redirect()->back()->with('message', 'Đã xóa ' . $n . ' !');
+            return redirect()->back()->with('message', 'Deleted ' . $n . ' !');
         } else {
             return view('admin.loginadmin');
         }
@@ -563,7 +563,7 @@ class AdminController extends Controller {
             $n = $x->link;
             File::delete('images/slide/' . $x->image);
             $x->delete();
-            return redirect()->back()->with('message', 'Đã xóa ' . $n . ' !');
+            return redirect()->back()->with('message', 'Deleted ' . $n . ' !');
         } else {
             return view('admin.loginadmin');
         }
@@ -574,7 +574,7 @@ class AdminController extends Controller {
             $x = User::where('id', $id)->first();
             $n = $x->email;
             $x->delete();
-            return redirect()->back()->with('message', 'Đã xóa ' . $n . ' !');
+            return redirect()->back()->with('message', 'Deleted ' . $n . ' !');
         } else {
             return view('admin.loginadmin');
         }
@@ -585,7 +585,7 @@ class AdminController extends Controller {
             $x = Customer::where('id', $id)->first();
             $n = $x->name;
             $x->delete();
-            return redirect()->back()->with('message', 'Đã xóa ' . $n . ' !');
+            return redirect()->back()->with('message', 'Deleted ' . $n . ' !');
         } else {
             return view('admin.loginadmin');
         }
@@ -601,7 +601,7 @@ class AdminController extends Controller {
                 $x = BillDetail::where('id', $b->id)->first();
                 $x->delete();
             }
-            return redirect()->back()->with('message', 'Đã xóa ' . $n . ' !');
+            return redirect()->back()->with('message', 'Deleted ' . $n . ' !');
         } else {
             return view('admin.loginadmin');
         }
@@ -787,11 +787,11 @@ class AdminController extends Controller {
                     $file->move('images/sys/', $file_name);
                     $x->value = $file_name;
                 } else {
-                    return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                    return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!).');
                 }
             }
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi Logo!');
+            return redirect()->back()->with('message', 'Logo changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -813,7 +813,7 @@ class AdminController extends Controller {
         if ($x) {
             $x->value = $req->value;
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi nội dung giới thiệu!');
+            return redirect()->back()->with('message', 'About us changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -824,7 +824,7 @@ class AdminController extends Controller {
         if ($x) {
             $x->value = $req->value;
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi nội dung liên hệ!');
+            return redirect()->back()->with('message', 'Contact changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -835,7 +835,7 @@ class AdminController extends Controller {
         if ($x) {
             $x->value = $req->value;
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi nội dung giới thiệu!');
+            return redirect()->back()->with('message', 'About us changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -846,7 +846,7 @@ class AdminController extends Controller {
         if ($x) {
             $x->value = $req->value;
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi nội dung liên hệ!');
+            return redirect()->back()->with('message', 'Contact changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -864,11 +864,11 @@ class AdminController extends Controller {
                     $file->move('images/sys/', $file_name);
                     $x->value = $file_name;
                 } else {
-                    return redirect()->back()->with('message', 'Định dạng hình ảnh không đúng.');
+                    return redirect()->back()->with('message', 'Invalid picture format! ( *.png; *.jpg are accepted!).');
                 }
             }
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi phương thức thanh toán!');
+            return redirect()->back()->with('message', 'Payment method changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -905,8 +905,8 @@ class AdminController extends Controller {
             'email' => 'required|email',
             'password' => 'required|min:6|max:20'
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid picture format! ( *.png; *.jpg are accepted!)., ',
             'password.required' => 'Vui lòng nhập mật khẩu, ',
             'password.min' => 'Mật khẩu tối thiểu 6 ký tự, ̣',
             'password.max' => 'Mật khẩu tối đa 20 ký tự.̣'
@@ -945,7 +945,7 @@ class AdminController extends Controller {
             'fullname' => 'required',
             'repassword' => 'required|same:password'
                 ], [
-            'fullname.required' => 'Vui lòng nhập họ tên, ',
+            'fullname.required' => 'Please input your full name, ',
             'repassword.same' => 'Mật khẩu không khớp nhau, ',
             'password.required' => 'Vui lòng nhập mật khẩu mới, ',
             'password.min' => 'Mật khẩu mới tối thiểu 6 ký tự, ̣',
