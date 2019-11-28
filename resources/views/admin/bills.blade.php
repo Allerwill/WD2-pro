@@ -89,8 +89,8 @@
                                             @foreach($xs as $x)
                                             <tr class="gradeA odd" role="row">
                                                 <td>{{@$x->id}}</td>
-                                                <td><a href="{{route('viewcustomer',@$x->id_customer)}}">Xem KH {{@$x->id_customer}}</a></td>
-                                                <td>{{@number_format($x->total)}}đ</td>
+                                                <td><a href="{{route('viewcustomer',@$x->id_customer)}}">View customer {{@$x->id_customer}}</a></td>
+                                                <td>${{@number_format($x->total)}}</td>
                                                 <td>{{@$x->date_order}}</td>
                                                 <td>{{@$x->payment}}</td>
                                                 <td class="center">

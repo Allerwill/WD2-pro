@@ -802,7 +802,7 @@ class AdminController extends Controller {
         if ($x) {
             $x->value = $req->value;
             $x->save();
-            return redirect()->back()->with('message', 'Đã thay đổi tiêu đề!');
+            return redirect()->back()->with('message', 'Web title changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -835,7 +835,7 @@ class AdminController extends Controller {
         if ($x) {
             $x->value = $req->value;
             $x->save();
-            return redirect()->back()->with('message', 'About us changed successfully!');
+            return redirect()->back()->with('message', 'News Notif changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -885,7 +885,7 @@ class AdminController extends Controller {
             $instagram->save();
             $google->value = $req->google;
             $google->save();
-            return redirect()->back()->with('message', 'Đã thay đổi liên kết mạng xã hội!');
+            return redirect()->back()->with('message', 'Social media changed successfully!');
         } else {
             return redirect()->back();
         }
@@ -907,17 +907,17 @@ class AdminController extends Controller {
                 ], [
             'email.required' => 'Please input your email, ',
             'email.email' => 'Invalid picture format! ( *.png; *.jpg are accepted!)., ',
-            'password.required' => 'Vui lòng nhập mật khẩu, ',
-            'password.min' => 'Mật khẩu tối thiểu 6 ký tự, ̣',
-            'password.max' => 'Mật khẩu tối đa 20 ký tự.̣'
+            'password.required' => 'Please input your password, ',
+            'password.min' => 'The minimum lengh is 6 characters, ̣',
+            'password.max' => 'The maximum lengh is 20 characters.̣'
         ]);
         $checklog = array('email' => $req->email, 'password' => $req->password);
         if (Auth::attempt($checklog) && (Auth::user()->type == "Admin" || Auth::user()->type == "Supper Admin")) {
-            return redirect()->back()->with(['alert' => 'success', 'message' => 'Đăng nhập thành công!']);
+            return redirect()->back()->with(['alert' => 'success', 'message' => 'Logged in successfully!']);
         } else if (Auth::attempt($checklog) && Auth::user()->type != "Admin" && Auth::user()->type != "Supper Admin") {
-            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Account không được cấp quyền!']);
+            return redirect()->back()->with(['alert' => 'danger', 'message' => 'You are not invited to this Role!']);
         } else {
-            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Đăng nhập thất bại!']);
+            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Login Unsuccessfully!']);
         }
     }
 
@@ -946,10 +946,10 @@ class AdminController extends Controller {
             'repassword' => 'required|same:password'
                 ], [
             'fullname.required' => 'Please input your full name, ',
-            'repassword.same' => 'Mật khẩu không khớp nhau, ',
-            'password.required' => 'Vui lòng nhập mật khẩu mới, ',
-            'password.min' => 'Mật khẩu mới tối thiểu 6 ký tự, ̣',
-            'password.max' => 'Mật khẩu mới tối đa 20 ký tự.̣'
+            'repassword.same' => 'Password mismatch, ',
+            'password.required' => 'Please input your password, ',
+            'password.min' => 'The minimum lengh is 6 characters, ̣',
+            'password.max' => 'The maximum lengh is 20 characters.̣'
         ]);
         $x = User::where('id', Auth::user()->id)->first();
         $x->full_name = $req->fullname;

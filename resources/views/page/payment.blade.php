@@ -44,7 +44,7 @@
                                 <p><a href="{{route('product-detail',@$payment['item']['id'])}}">{{@$payment['item']['name']}}</a></p>
                             </td>
                             <td>
-                                <p>{{number_format(@$payment['item']['unit_price'])}}đ</p>
+                                <p>${{number_format(@$payment['item']['unit_price'])}}</p>
                             </td>
                             <td>
                                 <div class="input-append">
@@ -54,7 +54,7 @@
                                     <a class="btn btn-danger" href="{{route('deletecart',@$payment['item']['id'])}}" title="del"><i class="icon-remove icon-white"></i></a>
                                 </div>
                             </td>
-                            <td>{{@number_format($payment['item']['unit_price']*$payment['qty'])}}đ</td>
+                            <td>${{@number_format($payment['item']['unit_price']*$payment['qty'])}}</td>
                         </tr>
                         @endforeach
                         <tr>
@@ -64,7 +64,7 @@
 
                             </th>
                             <th>{{Session('cart')->totalQty}}</th>
-                            <th>{{number_format(Session('cart')->totalPrice)}}đ</th>
+                            <th>${{number_format(Session('cart')->totalPrice)}}</th>
                         </tr>
                     </tbody>
                 </table>
@@ -77,7 +77,7 @@
                             <form class="form-horizontal" method="post" action="{{route('payment')}}">
                                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <div class="control-group">
-                                    <label class="control-label">Họ tên:</label>
+                                    <label class="control-label">Full name:</label>
                                     <div class="controls">
                                         @if(Auth::check())
                                         <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="{{Auth::user()->full_name}}">

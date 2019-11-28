@@ -49,13 +49,13 @@
                                     <img class="img-reponsive" width="100" src="{{asset('images/product/'.$product['item']['image'])}}" alt="{{$product['item']['name']}}">
                                 </a>
                                 <span> X {{$product['qty']}}</span>
-                                <span> = {{number_format($product['item']['unit_price']*$product['qty'])}}đ. </span>
+                                <span> = ${{number_format($product['item']['unit_price']*$product['qty'])}} </span>
                                 <a class="btn" href="{{route('addtocart',$product['item']['id'])}}" title="add 1"><i class="icon-plus"></i></a>
                                 <a class="btn" href="{{route('reducecart',$product['item']['id'])}}" title="reduce 1"><i class="icon-minus"></i></a>
                                 <a class="btn" href="{{route('deletecart',$product['item']['id'])}}" title="Delete all"><i class="icon-remove icon-white"></i></a>
                                 <hr>
                                 @endforeach
-                                <a class="btn" href="{{route('payment')}}">Total: {{number_format(Session('cart')->totalPrice)}}đ. >>> Pay now!</a>
+                                <a class="btn" href="{{route('payment')}}">Total: ${{number_format(Session('cart')->totalPrice)}} &nbsp; &#9758; &nbsp; Pay now!</a>
                             </div>
                         </div>
                         @else

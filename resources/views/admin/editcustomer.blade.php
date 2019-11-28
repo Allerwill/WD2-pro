@@ -22,20 +22,20 @@
                         <input type="hidden" name="id" value="{{$x->id}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Họ tên:</label>
-                            <input class="form-control" name="name" type="text" placeholder="Nhập họ tên" value="{{$x->name}}">
+                            <label>Full name:</label>
+                            <input class="form-control" name="name" type="text" placeholder="Full name" value="{{$x->name}}">
                         </div>
                         <div class="form-group">
                             <label>Email:</label>
-                            <input class="form-control" name="email" type="email" placeholder="Nhập email" value="{{$x->email}}">
+                            <input class="form-control" name="email" type="email" placeholder="Email" value="{{$x->email}}">
                         </div>
                         <div class="form-group">
-                            <label>Điện thoại:</label>
-                            <input class="form-control" name="phone" type="tel" placeholder="Nhập số điện thoại" value="{{$x->phone}}">
+                            <label>Phone number:</label>
+                            <input class="form-control" name="phone" type="tel" placeholder="Phone number" value="{{$x->phone}}">
                         </div>
                         <div class="form-group">
-                            <label>Địa chỉ:</label>
-                            <input class="form-control" name="address" type="text" placeholder="Nhập địa chỉ" value="{{$x->address}}">
+                            <label>Address:</label>
+                            <input class="form-control" name="address" type="text" placeholder="Address" value="{{$x->address}}">
                         </div>
                         <div class="form-group">
                             <label>Status:</label>

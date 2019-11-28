@@ -17,13 +17,13 @@
                         <span>Customer ID: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Họ tên: </span><strong> {{@$x->name}} </strong>
+                        <span>Full name: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
                         <span>Email: </span><strong> {{@$x->email}} </strong>
                     </p>
                     <p>
-                        <span>Số điện thoại: </span><strong> {{@$x->phone}} </strong>
+                        <span>Phone number: </span><strong> {{@$x->phone}} </strong>
                     </p>
                     <p>
                         <span>Address: </span><strong> {{@$x->address}} </strong>
@@ -33,8 +33,8 @@
                     </p>
                 </div>
                 <div class="panel-footer">
-                    <p><span>Đã tạo:</span> {{@$x->created_at}}</p>
-                    <p><span>Cập nhật:</span> {{@$x->updated_at}}</p>
+                    <p><span>Created at:</span> {{@$x->created_at}}</p>
+                    <p><span>Update:</span> {{@$x->updated_at}}</p>
                 </div>
             </div>
         </div>

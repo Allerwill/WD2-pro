@@ -21,20 +21,20 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Họ tên:</label>
-                            <input class="form-control" name="name" type="text" placeholder="Nhập họ tên" max="55">
+                            <label>Full name:</label>
+                            <input class="form-control" name="name" type="text" placeholder="Full name" max="55">
                         </div>
                         <div class="form-group">
                             <label>Email:</label>
-                            <input class="form-control" name="email" type="email" placeholder="Nhập email">
+                            <input class="form-control" name="email" type="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label>Điện thoại:</label>
-                            <input class="form-control" name="phone" type="tel" placeholder="Nhập số điện thoại">
+                            <label>Phone number:</label>
+                            <input class="form-control" name="phone" type="tel" placeholder="Phone number">
                         </div>
                         <div class="form-group">
-                            <label>Địa chỉ:</label>
-                            <input class="form-control" name="address" type="text" placeholder="Nhập địa chỉ">
+                            <label>Address:</label>
+                            <input class="form-control" name="address" type="text" placeholder="Address">
                         </div>
                         <div class="form-group">
                             <label>Status:</label>

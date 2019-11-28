@@ -53,10 +53,10 @@
                                                 <a href="{{route('product-detail',@$np->id)}}"><h5><?php echo $np->name; ?></h5></a>
                                                 <div style="margin-bottom: 30px;">
                                                     @if($np->promotion_price==0)
-                                                    <span class="pull-left"><?php echo number_format($np->unit_price); ?>đ</span>
+                                                    <span class="pull-left">$<?php echo number_format($np->unit_price); ?></span>
                                                     @else
-                                                    <span class="pull-left"  style="text-decoration: line-through;"><?php echo number_format($np->unit_price); ?>đ</span>
-                                                    <span class="pull-right"><?php echo number_format($np->promotion_price); ?>đ</span>
+                                                    <span class="pull-left"  style="text-decoration: line-through;">$<?php echo number_format($np->unit_price); ?></span>
+                                                    <span class="pull-right">$<?php echo number_format($np->promotion_price); ?></span>
                                                     @endif
                                                 </div>
                                             </div>
@@ -84,9 +84,9 @@
                                         <a class="btn" href="{{route('product-detail',@$sp->id)}}"> <i class="icon-zoom-in"></i></a>
                                         <a class="btn" href="{{route('addtocart',@$sp->id)}}"><i class="icon-shopping-cart"></i></a>
                                         @if($sp->promotion_price==0)
-                                        <a class="btn"><?php echo number_format($sp->unit_price); ?>đ</a>
+                                        <a class="btn">$<?php echo number_format($sp->unit_price); ?></a>
                                         @else
-                                        <a class="btn"><?php echo number_format($sp->promotion_price); ?>đ</a>
+                                        <a class="btn">$<?php echo number_format($sp->promotion_price); ?></a>
                                         @endif
                                     </h4>
                                 </div>

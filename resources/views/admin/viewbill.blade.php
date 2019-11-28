@@ -17,7 +17,7 @@
                         <span>Invoice ID: </span><strong> {{@$b->id}} </strong>
                     </p>
                     <p>
-                        <span>Customer ID: </span><strong> <a href="{{route('viewcustomer',@$b->id_customer)}}">Xem KH {{@$b->id_customer}}</a> </strong>
+                        <span>Customer ID: </span><strong> <a href="{{route('viewcustomer',@$b->id_customer)}}">View customer {{@$b->id_customer}}</a> </strong>
                     </p>
                     <p>
                         <span>Order date: </span><strong> {{@$b->date_order}} </strong>
@@ -56,16 +56,16 @@
         <div class="col-lg-6">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <a href="{{route('bills')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Chi tiết hóa đơn
+                    <a href="{{route('bills')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Invoice details
                 </div>
                 <div class="panel-body">
                     <?php $j = 1; ?>
                     <?php foreach (@$bd as $i): ?>
-                        <span>Số thứ tự: </span><strong> {{@$j}} </strong>
+                        <span>Arrange: </span><strong> {{@$j}} </strong>
                         <ul>
                             <li><span>Product: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">View product {{@$i->id_product}}</a> </strong></li>
-                            <li><span>Số lượng: </span><strong> {{@$i->quantity}} </strong></li>
-                            <li><span>Đơn giá: </span><strong> {{@number_format(@$i->unit_price)}} </strong></li>
+                            <li><span>Quantity: </span><strong> {{@$i->quantity}} </strong></li>
+                            <li><span>Unit price: </span><strong> {{@number_format(@$i->unit_price)}} </strong></li>
                         </ul>
                         <?php $j++; ?>
                     <?php endforeach; ?>
