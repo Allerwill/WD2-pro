@@ -3,7 +3,7 @@ include("class.phpmailer.php");
 include("class.smtp.php");
 $mail = new PHPMailer();
 $body = '<strong>Xác nhận phản hồi</strong><br />';
-$body .= '<strong>Full name: </strong>' . @$_POST['name'] . ' <br />';
+$body .= '<strong>Họ tên: </strong>' . @$_POST['name'] . ' <br />';
 $body .= '<strong>Email: </strong>' . @$_POST['mail'] . ' <br />';
 $body .= '<strong>Tiêu đề: </strong>' . @$_POST['title'] . ' <br />';
 $body .= '<strong>Nội dung: </strong>' . @$_POST['content'] . ' <br />';

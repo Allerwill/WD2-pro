@@ -3,7 +3,7 @@
 /**
  *
  * @package  Laravel
- * @author   Group 10
+ * @author   Phạm Lê Minh Phú
  */
 
 require __DIR__.'/../bootstrap/autoload.php';

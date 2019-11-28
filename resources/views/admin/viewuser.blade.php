@@ -30,13 +30,13 @@
                         <span>Token: </span><strong> {{@$x->remember_token}} </strong>
                     </p>
                     <p>
-                        <span>Full name: </span><strong> {{@$x->full_name}} </strong>
+                        <span>Họ tên: </span><strong> {{@$x->full_name}} </strong>
                     </p>
                     <p>
                         <span>Email: </span><strong> {{@$x->email}} </strong>
                     </p>
                     <p>
-                        <span>Phone number: </span><strong> {{@$x->phone}} </strong>
+                        <span>Số điện thoại: </span><strong> {{@$x->phone}} </strong>
                     </p>
                     <p>
                         <span>Address: </span><strong> {{@$x->address}} </strong>

@@ -4,7 +4,20 @@
     <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/SQL/ltw2p.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/ltw2p.sql" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addproduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addslide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addslide.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addtype.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/editslide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editslide.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/edittype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/edittype.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/types.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/types.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewproduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/viewtype.blade.php" afterDir="false" />
+>>>>>>> parent of 9f0b74c... change lang; in route
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +104,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,8 +137,11 @@
       <workItem from="1574490070832" duration="1586000" />
       <workItem from="1574495347812" duration="5239000" />
       <workItem from="1574589293039" duration="2016000" />
+<<<<<<< HEAD
       <workItem from="1574591708247" duration="6672000" />
       <workItem from="1574930917630" duration="3105000" />
+=======
+>>>>>>> parent of 9f0b74c... change lang; in route
     </task>
     <servers />
   </component>
