@@ -111,10 +111,10 @@
                                 </strong>
                                 <div>
                                     @if($p->promotion_price==0)
-                                    <p>Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                     @else
-                                    <p style="text-decoration: line-through;">Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
-                                    <p>Now only: <?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p style="text-decoration: line-through;">Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Now only: $<?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
                                     @endif
                                 </div>
                                 <a href="{{route('product-detail',@$p->id)}}" class="btn"><i class="icon-zoom-in"></i> Learn more</a>
@@ -148,10 +148,10 @@
                                         </strong>
                                         <div>
                                             @if($p->promotion_price==0)
-                                            <p class="pull-left">Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                            <p class="pull-left">Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                             @else
-                                            <p class="pull-left" style="text-decoration: line-through;">Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
-                                            <p class="pull-right">Now Only: <?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
+                                            <p class="pull-left" style="text-decoration: line-through;">Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                            <p class="pull-right">Now Only: $<?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
                                             @endif
                                         </div>
                                     </div>

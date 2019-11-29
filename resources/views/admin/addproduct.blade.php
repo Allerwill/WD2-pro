@@ -21,7 +21,7 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Type name:</label>
+                            <label>Product name:</label>
                             <input class="form-control" name="name" type="text" placeholder="Product name" >
                         </div>
                         <div class="form-group">
@@ -33,11 +33,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Đơn giá:</label>
+                            <label>Unit price:</label>
                             <input class="form-control" name="unit_price" type="number">
                         </div>
                         <div class="form-group">
-                            <label>Giá sale:</label>
+                            <label>Promotion price:</label>
                             <input class="form-control" name="promotion_price" type="number" value="0">
                         </div>
                         <div class="form-group">

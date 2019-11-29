@@ -27,7 +27,7 @@
                                 <input name="mail" type="text" placeholder="Email" class="input-xlarge"/>
                             </div>
                             <div class="control-group">
-                                <input name="title" type="text" placeholder="Tiêu đề" class="input-xlarge"/>
+                                <input name="title" type="text" placeholder="Title" class="input-xlarge"/>
                             </div>
                             <div class="control-group">
                                 <textarea name="content" id="demo" class="form-control ckeditor"></textarea>

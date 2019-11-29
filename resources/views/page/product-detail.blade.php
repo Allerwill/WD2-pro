@@ -24,7 +24,7 @@
                             <div class="control-group">
                                 <label class="control-label">
                                     @if($product_detail->promotion_price == 0)
-                                    <p>Price: <?php echo number_format($product_detail->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Price: $<?php echo number_format($product_detail->unit_price); ?>{{@Session::get('unit')->value}}</p>
                                     @else
                                     <p>Original Price: <s> $<?php echo number_format($product_detail->unit_price); ?></s>{{@Session::get('unit')->value}}<br></p>
                                     <p style="font-size: 20px;">Now Only: $<?php echo number_format($product_detail->promotion_price); ?>{{@Session::get('unit')->value}}</p>
@@ -55,7 +55,7 @@
                                             </div>
                                             <div class="" style="height: 150px;">
                                                 <h3><a href="{{route('product-detail',@$p->id)}}"><?php echo $p->name; ?></a></h3>	
-                                                <h4>Price: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</h4>
+                                                <h4>Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</h4>
                                             </div>
                                         </div>
                                         <hr class="soft"/>
