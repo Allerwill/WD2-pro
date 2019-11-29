@@ -118,9 +118,9 @@ class PageController extends Controller {
             'email' => 'required|email',
             'fullname' => 'required',
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
-            'fullname.required' => 'Vui lòng nhập họ tên, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid email, ',
+            'fullname.required' => 'Please input your full name, ',
         ]);
         if ($cart) {
             $cus = Customer::where('email', '=', $req->email)->first();
@@ -189,17 +189,17 @@ class PageController extends Controller {
             'email' => 'required|email',
             'password' => 'required|min:6|max:20'
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid email, ',
             'password.required' => 'Vui lòng nhập mật khẩu, ',
-            'password.min' => 'Mật khẩu tối thiểu 6 ký tự, ̣',
-            'password.max' => 'Mật khẩu tối đa 20 ký tự.̣'
+            'password.min' => 'The minimum length is 6 characters., ̣',
+            'password.max' => 'The maximum length is 20 characters.̣'
         ]);
         $checklog = array('email' => $req->email, 'password' => $req->password);
         if (Auth::attempt($checklog)) {
-            return redirect()->back()->with(['alert' => 'success', 'message' => 'Đăng nhập thành công!']);
+            return redirect()->back()->with(['alert' => 'success', 'message' => 'Login successfully!']);
         } else {
-            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Đăng nhập thất bại!']);
+            return redirect()->back()->with(['alert' => 'danger', 'message' => 'Login Unsuccessfully!']);
         }
     }
 
@@ -219,14 +219,14 @@ class PageController extends Controller {
             'fullname' => 'required',
             'repassword' => 'required|same:password'
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
-            'email.unique' => 'Email đã có người sử dụng, ',
-            'fullname.required' => 'Vui lòng nhập họ tên, ',
-            'repassword.same' => 'Mật khẩu không khớp nhau, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid email, ',
+            'email.unique' => 'Email is already existed, ',
+            'fullname.required' => 'Please input your full name, ',
+            'repassword.same' => 'Password mismatch, ',
             'password.required' => 'Vui lòng nhập mật khẩu, ',
-            'password.min' => 'Mật khẩu tối thiểu 6 ký tự, ̣',
-            'password.max' => 'Mật khẩu tối đa 20 ký tự.̣'
+            'password.min' => 'The minimum length is 6 characters., ̣',
+            'password.max' => 'The maximum length is 20 characters.̣'
         ]);
         $user = new User;
         $user->full_name = $req->fullname;
@@ -287,9 +287,9 @@ class PageController extends Controller {
                 'email' => 'required|email',
                 'fullname' => 'required',
                     ], [
-                'email.required' => 'Vui lòng nhập email, ',
-                'email.email' => 'Email không đúng định dạng, ',
-                'fullname.required' => 'Vui lòng nhập họ tên, ',
+                'email.required' => 'Please input your email, ',
+                'email.email' => 'Invalid email, ',
+                'fullname.required' => 'Please input your full name, ',
             ]);
             $user = User::where('email', '=', $req->email)->first();
             if ($user) {
@@ -316,12 +316,12 @@ class PageController extends Controller {
             'password' => 'required|min:6|max:20',
             'repassword' => 'required|same:password'
                 ], [
-            'email.required' => 'Vui lòng nhập email, ',
-            'email.email' => 'Email không đúng định dạng, ',
-            'repassword.same' => 'Mật khẩu không khớp nhau, ',
+            'email.required' => 'Please input your email, ',
+            'email.email' => 'Invalid email, ',
+            'repassword.same' => 'Password mismatch, ',
             'password.required' => 'Vui lòng nhập mật khẩu, ',
-            'password.min' => 'Mật khẩu tối thiểu 6 ký tự, ̣',
-            'password.max' => 'Mật khẩu tối đa 20 ký tự.̣'
+            'password.min' => 'The minimum length is 6 characters., ̣',
+            'password.max' => 'The maximum length is 20 characters.̣'
         ]);
         $user = User::where('email', '=', $req->email)->first();
         if ($user) {

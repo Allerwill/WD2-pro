@@ -21,24 +21,24 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Họ tên:</label>
-                            <input class="form-control" name="fullname" value="{{@$u->full_name}}" type="text" placeholder="Nhập họ tên" max="55">
+                            <label>Full name:</label>
+                            <input class="form-control" name="fullname" value="{{@$u->full_name}}" type="text" placeholder="Full name" max="55">
                         </div>
                         <div class="form-group">
-                            <label>Điện thoại:</label>
-                            <input class="form-control" name="phone" value="{{@$u->phone}}" type="tel" placeholder="Nhập số điện thoại">
+                            <label>Phone number:</label>
+                            <input class="form-control" name="phone" value="{{@$u->phone}}" type="tel" placeholder="Phone number">
                         </div>
                         <div class="form-group">
-                            <label>Địa chỉ:</label>
-                            <input class="form-control" name="address" value="{{@$u->address}}" type="text" placeholder="Nhập địa chỉ">
+                            <label>Address:</label>
+                            <input class="form-control" name="address" value="{{@$u->address}}" type="text" placeholder="Address">
                         </div>
                         <div class="form-group">
-                            <label>Mật khẩu:</label>
-                            <input class="form-control" name="password" type="password" placeholder="Nhập mật khẩu">
+                            <label>Password:</label>
+                            <input class="form-control" name="password" type="password" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <label>Nhập lại:</label>
-                            <input class="form-control" name="repassword" type="password" placeholder="Nhập lại mật khẩu">
+                            <label>Confirm password:</label>
+                            <input class="form-control" name="repassword" type="password" placeholder="Confirm password">
                         </div>
                         <button type="submit" class="btn btn-default">Save</button>
                     </form>

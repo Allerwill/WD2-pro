@@ -908,8 +908,8 @@ class AdminController extends Controller {
             'email.required' => 'Please input your email, ',
             'email.email' => 'Invalid picture format! ( *.png; *.jpg are accepted!)., ',
             'password.required' => 'Please input your password, ',
-            'password.min' => 'The minimum lengh is 6 characters, ̣',
-            'password.max' => 'The maximum lengh is 20 characters.̣'
+            'password.min' => 'The minimum length is 6 characters, ̣',
+            'password.max' => 'The maximum length is 20 characters.̣'
         ]);
         $checklog = array('email' => $req->email, 'password' => $req->password);
         if (Auth::attempt($checklog) && (Auth::user()->type == "Admin" || Auth::user()->type == "Supper Admin")) {
@@ -948,8 +948,8 @@ class AdminController extends Controller {
             'fullname.required' => 'Please input your full name, ',
             'repassword.same' => 'Password mismatch, ',
             'password.required' => 'Please input your password, ',
-            'password.min' => 'The minimum lengh is 6 characters, ̣',
-            'password.max' => 'The maximum lengh is 20 characters.̣'
+            'password.min' => 'The minimum length is 6 characters, ̣',
+            'password.max' => 'The maximum length is 20 characters.̣'
         ]);
         $x = User::where('id', Auth::user()->id)->first();
         $x->full_name = $req->fullname;
