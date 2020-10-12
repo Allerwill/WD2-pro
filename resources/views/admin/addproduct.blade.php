@@ -21,11 +21,11 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         @include('mess')
                         <div class="form-group">
-                            <label>Product name:</label>
+                            <label>Tên sản phẩm:</label>
                             <input class="form-control" name="name" type="text" placeholder="Product name" >
                         </div>
                         <div class="form-group">
-                            <label>Types:</label>
+                            <label>Loại sản phẩm:</label>
                             <select name="id_type" class="form-control">
                                 <?php foreach ($ts as $t): ?>
                                 <option value="{{$t->id}}">{{$t->name}}</option>
@@ -33,22 +33,22 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Unit price:</label>
+                            <label>Đơn giá:</label>
                             <input class="form-control" name="unit_price" type="number">
                         </div>
                         <div class="form-group">
-                            <label>Promotion price:</label>
+                            <label>Giá ưu đãi:</label>
                             <input class="form-control" name="promotion_price" type="number" value="0">
                         </div>
                         <div class="form-group">
-                            <label>Picture:</label>
+                            <label>Hình ảnh:</label>
                             <input class="form-control" name="image" type="file">
                         </div>
                         <div class="form-group">
-                            <label>Unit:</label>
+                            <label>Đơn vị tính:</label>
                             <select name="unit" class="form-control">
-                                <option value="Pound">Pound</option>
-                                <option value="Liter">Liter</option>
+                                <option value="Pound">Cái</option>
+                                <option value="Liter">Chiếc</option>
                             </select>
                         </div>
                         <div class="form-group">

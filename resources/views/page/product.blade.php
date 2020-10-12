@@ -6,13 +6,13 @@
             @include('menu')
             <div class="span9 row-container">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Home</a></li>
-                    <li class="active"><span class="divider">/</span> Product</li>
+                    <li><a href="{{route('home')}}">Trang chủ</a></li>
+                    <li class="active"><span class="divider">/</span> Sản phẩm</li>
                 </ul>
                 <form class="form-inline navbar-search" method="post" action="{{route('search')}}" style="float:right;">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-                    <input name="keysearch" type="text" value="{{Session('keysearch')}}" placeholder="Search product"/>
-                    <input class="btn" type="submit" value="Search">
+                    <input name="keysearch" type="text" value="{{Session('keysearch')}}" placeholder="Tìm kiếm sản phẩm"/>
+                    <input class="btn" type="submit" value="Tìm kiếm">
                 </form>
                 <form class="form-inline navbar-search" method="post" action="{{route('sort')}}">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
@@ -23,35 +23,35 @@
                             echo 'selected="true"';
                         }
                         ?>
-                                >Sort by name A - Z</option>
+                                >Sắp xếp theo tên A - Z</option>
                         <option value="name_DESC"
                         <?php
                         if (@Session::get('sort') == "name_DESC") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >Sort by name Z - A</option>
+                                >Sắp xếp theo tên Z - A</option>
                         <option value="unit_price_ASC"
                         <?php
                         if (@Session::get('sort') == "unit_price_ASC") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >Sort by price Ascending</option>
+                                >Giá tăng dần</option>
                         <option value="unit_price_DESC"
                         <?php
                         if (@Session::get('sort') == "unit_price_DESC") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >Sort by price Descending</option>
+                                >Giá giảm dần</option>
                         <option value="promotion_price_DESC"
                         <?php
                         if (@Session::get('sort') == "promotion_price_DESC") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >Hot price</option>
+                                >Giá tốt</option>
                     </select>
                     <select name="perpage">
                         <option value="9"
@@ -60,42 +60,42 @@
                             echo 'selected="true"';
                         }
                         ?>
-                                >9 products per page</option>
+                                >9 sản phẩm mỗi trang</option>
                         <option value="12"
                         <?php
                         if (@Session::get('perpage') == "12") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >12 products per page</option>
+                                >12 sản phẩm mỗi trang</option>
                         <option value="24"
                         <?php
                         if (@Session::get('perpage') == "24") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >24 products per page</option>
+                                >24 sản phẩm mỗi trang</option>
                         <option value="100"
                         <?php
                         if (@Session::get('perpage') == "100") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >100 products per page</option>
+                                >100 sản phẩm mỗi trang</option>
                         <option value="500"
                         <?php
                         if (@Session::get('perpage') == "500") {
                             echo 'selected="true"';
                         }
                         ?>
-                                >500 products per page</option>
+                                >500 sản phẩm mỗi trang</option>
                     </select>
-                    <input class="btn" type="submit" value="Sort">
+                    <input class="btn" type="submit" value="Lọc">
                 </form>
                 <br class="clr"/><br class="clr"/>
                 <div id="myTab">
-                    <a href="#listView" data-toggle="tab"><span class="btn"><i class="icon-list"></i> List view</span></a>
-                    <a href="#blockView" data-toggle="tab"><span class="btn"><i class="icon-th-large"></i>Grid view</span></a>
+                    <a href="#listView" data-toggle="tab"><span class="btn"><i class="icon-list"></i> Xem dạng danh sách</span></a>
+                    <a href="#blockView" data-toggle="tab"><span class="btn"><i class="icon-th-large"></i>Xem dạng lưới</span></a>
                 </div>
                 <br class="clr"/>
                 <div class="tab-content">
@@ -111,14 +111,14 @@
                                 </strong>
                                 <div>
                                     @if($p->promotion_price==0)
-                                    <p>Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Giá: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}} VNĐ</p>
                                     @else
-                                    <p style="text-decoration: line-through;">Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
-                                    <p>Now only: $<?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p style="text-decoration: line-through;">Giá: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                    <p>Nay còn: <?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}} VNĐ</p>
                                     @endif
                                 </div>
-                                <a href="{{route('product-detail',@$p->id)}}" class="btn"><i class="icon-zoom-in"></i> Learn more</a>
-                                <a href="{{route('addtocart',$p->id)}}" class="btn"><i class=" icon-shopping-cart"></i> Add to cart</a>
+                                <a href="{{route('product-detail',@$p->id)}}" class="btn"><i class="icon-zoom-in"></i> Xem thêm</a>
+                                <a href="{{route('addtocart',$p->id)}}" class="btn"><i class=" icon-shopping-cart"></i> Thêm vào giỏ</a>
                             </div>
                         </div>
                         <hr class="soft"/>
@@ -137,8 +137,8 @@
                                     </a>
                                     <br/><br/>
                                     <div class="content">
-                                        <a href="{{route('product-detail',@$p->id)}}" class="btn pull-left"><i class="icon-zoom-in"></i> Learn more</a>
-                                        <a href="{{route('addtocart',$p->id)}}" class="btn pull-right"><i class=" icon-shopping-cart"></i> Add to cart</a>
+                                        <a href="{{route('product-detail',@$p->id)}}" class="btn pull-left"><i class="icon-zoom-in"></i> Xem thêm</a>
+                                        <a href="{{route('addtocart',$p->id)}}" class="btn pull-right"><i class=" icon-shopping-cart"></i> Thêm vào giỏ</a>
                                     </div>
                                     <br class="clr"/>
                                     <div class="content" style="height:100px;">
@@ -148,10 +148,10 @@
                                         </strong>
                                         <div>
                                             @if($p->promotion_price==0)
-                                            <p class="pull-left">Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
+                                            <p class="pull-left">Giá: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}} VNĐ</p>
                                             @else
-                                            <p class="pull-left" style="text-decoration: line-through;">Price: $<?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}}</p>
-                                            <p class="pull-right">Now Only: $<?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}}</p>
+                                            <p class="pull-left" style="text-decoration: line-through;">Giá: <?php echo number_format($p->unit_price); ?>{{@Session::get('unit')->value}} VNĐ</p>
+                                            <p class="pull-right">Nay còn: <?php echo number_format($p->promotion_price); ?>{{@Session::get('unit')->value}} VNĐ</p>
                                             @endif
                                         </div>
                                     </div>

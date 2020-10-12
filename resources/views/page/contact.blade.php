@@ -6,42 +6,24 @@
             @include('menu')
             <div class="span9" id="mainCol">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
-                    <li class="active">Contact</li>
+                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
+                    <li class="active">Liên hệ</li>
                 </ul>
-                <h3>Contact Us</h3>
+                <h3>Thông tin liên hệ</h3>
                 <hr class="soft"/>
                 <div class="row">
                     <div class="span3">
-                        <h4>Details</h4>
+                        <h4>Chi tiết</h4>
                         <?php echo @$sys_contact->value; ?>
                     </div>
-                    <div class="span9">
-                        <h4>Respond</h4>
-                        <form action="{{url('testmail/test.php')}}" method="post" class="form-horizontal">
-                            <input name="url" type="hidden" value="{{route('contact')}}"/>
-                            <div class="control-group">
-                                <input name="name" type="text" placeholder="Name" class="input-xlarge"/>
-                            </div>
-                            <div class="control-group">
-                                <input name="mail" type="text" placeholder="Email" class="input-xlarge"/>
-                            </div>
-                            <div class="control-group">
-                                <input name="title" type="text" placeholder="Title" class="input-xlarge"/>
-                            </div>
-                            <div class="control-group">
-                                <textarea name="content" id="demo" class="form-control ckeditor"></textarea>
-                            </div>
-                            <button class="btn" type="submit">Send respond</button>
-                        </form>
-                    </div>
+
                 </div>
             </div>
         </div>	
         <div class="row">
             <div class="span12">
-                <iframe style="width:100%; height:300px; border: 0px" scrolling="no" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=18+California,+Fresno,+CA,+United+States&amp;aq=0&amp;oq=18+California+united+state&amp;sll=39.9589,-120.955336&amp;sspn=0.007114,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=18,+Fresno,+California+93727,+United+States&amp;t=m&amp;ll=36.732762,-119.695787&amp;spn=0.017197,0.100336&amp;z=14&amp;output=embed"></iframe><br />
-                <small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=18+California,+Fresno,+CA,+United+States&amp;aq=0&amp;oq=18+California+united+state&amp;sll=39.9589,-120.955336&amp;sspn=0.007114,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=18,+Fresno,+California+93727,+United+States&amp;t=m&amp;ll=36.732762,-119.695787&amp;spn=0.017197,0.100336&amp;z=14" style="color:#0000FF;text-align:left">View on Maps</a></small>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.46341862489!2d106.7676456147223!3d10.852314260756106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175279fc344b325%3A0xfd4b085a2978319b!2zMzggU-G7kSA1LCBMaW5oIENoaeG7g3UsIFRo4bunIMSQ4bupYywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1602429789855!5m2!1svi!2s" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <small><a href="https://goo.gl/maps/J6krYCSQ2g5rNvqf7" target="_blank" style="color:#0000FF;text-align:left">Xem trên Google Maps</a></small>
             </div>
         </div>
     </div>

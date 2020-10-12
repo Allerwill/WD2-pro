@@ -44,11 +44,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Description:</label>
+                            <label>Miêu tả:</label>
                             <textarea id="demo" class="form-control ckeditor" name="description" placeholder="Product types description" rows="5">{{$x->description}}</textarea>
                         </div>
-                        <button type="submit" class="btn btn-default">Save</button>
-                        <a href="{{route('types')}}" class="btn btn-default">Cancel</a>
+                        <button type="submit" class="btn btn-default">Lưu</button>
+                        <a href="{{route('types')}}" class="btn btn-default">Hủy</a>
                     </form>
                 </div>
             </div>

@@ -6,7 +6,7 @@
             @include('menu')
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
+                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
                     <li>Account <span class="divider">/</span></li>
                     <li class="active">{{Auth::user()->full_name}}</li>
                 </ul>
@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Full name:</label>
+                                    <label class="control-label">Họ và tên:</label>
                                     <div class="controls">
                                         @if(Auth::check())
                                         <input name="fullname" type="text" id="inputCountry" placeholder="Customer name" value="{{Auth::user()->full_name}}">
@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Address:</label>
+                                    <label class="control-label">Địa chỉ nhận hàng:</label>
                                     <div class="controls">
                                         @if(Auth::check())
                                         <input name="address" type="text" id="inputCountry" placeholder="Shipping address" value="{{Auth::user()->address}}">
@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Phone number:</label>
+                                    <label class="control-label">Số điện thoại:</label>
                                     <div class="controls">
                                         @if(Auth::check())
                                         <input name="phone" type="tel" id="inputCountry" placeholder="Phone number" value="{{Auth::user()->phone}}">
@@ -67,11 +67,11 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
-                                        <button type="submit" class="btn">Save changes</button>
+                                        <button type="submit" class="btn">Lưu thay đổi</button>
                                     </div>
                                 </div>
                             </form>
-                            <a href="{{route('repass')}}">Change password</a>
+                            <a href="{{route('repass')}}">Thay đổi  mật khẩu</a>
                         </td>
                     </tr>
                 </table>		

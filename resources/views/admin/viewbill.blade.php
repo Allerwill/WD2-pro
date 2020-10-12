@@ -63,9 +63,9 @@
                     <?php foreach (@$bd as $i): ?>
                         <span>Arrange: </span><strong> {{@$j}} </strong>
                         <ul>
-                            <li><span>Product: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">View product {{@$i->id_product}}</a> </strong></li>
-                            <li><span>Quantity: </span><strong> {{@$i->quantity}} </strong></li>
-                            <li><span>Unit price: </span><strong> {{@number_format(@$i->unit_price)}} </strong></li>
+                            <li><span>Sản phẩm: </span><strong> <a href="{{route('viewproduct',@$i->id)}}">View product {{@$i->id_product}}</a> </strong></li>
+                            <li><span>Số lượng: </span><strong> {{@$i->quantity}} </strong></li>
+                            <li><span>Đơn giá: </span><strong> {{@number_format(@$i->unit_price)}} </strong></li>
                         </ul>
                         <?php $j++; ?>
                     <?php endforeach; ?>

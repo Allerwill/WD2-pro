@@ -6,8 +6,8 @@
             @include('menu')
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="{{route('home')}}">Home</a> <span class="divider">/</span></li>
-                    <li class="active">Cart</li>
+                    <li><a href="{{route('home')}}">Trang chủ</a> <span class="divider">/</span></li>
+                    <li class="active">Giỏ hàng</li>
                 </ul>
                 
                 @if(count($errors)>0)
@@ -27,8 +27,8 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Product</th>
-                            <th>Information</th>
+                            <th>Sản phẩm</th>
+                            <th>Thông tin</th>
                             <th>Unit price</th>
                             <th>Quantity</th>
                             <th>Total amount</th>

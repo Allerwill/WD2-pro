@@ -6,7 +6,7 @@
                 <?php echo @$sys_footer->value; ?>
             </div>
             <div id="socialMedia" class="span3 pull-right">
-                <h5>SOCIAL MEDIA </h5>
+                <h5>Liên kết </h5>
                 <?php if (@$sys_facebook->stt == "ON"): ?>
                     <a href="{{@$sys_facebook->value}}" target="_blank"><img width="60" height="60" src="{{asset('images/sys/facebook.png')}}" title="facebook" alt="facebook"/></a>
                 <?php endif; ?>
@@ -20,8 +20,21 @@
             </div> 
         </div>
     </div>
-    <div class="container">
-        <p>&copy; 2019 - Developed with &#x2764; by Group 10</p>
+    <div class="container" style="font-family: 'Century Gothic'">
+        <script>
+            function welcome() {
+                var elm = document.getElementById('footerWelcome');
+                var da = new Date();
+                var message = '&#169; ' + da.getFullYear() + ' by LEQ with ❤';
+                elm.innerHTML = message;
+            }
+            window.setInterval(function() {
+                try {
+                    welcome();
+                } catch(e) {}
+            }, 500);
+        </script>
+        <h4 style="text-align: center;" id='footerWelcome'></h4>
     </div>
 </div>
 <script src="{{asset('js/jquery.js')}}" type="text/javascript"></script>

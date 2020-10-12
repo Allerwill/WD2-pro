@@ -3,11 +3,11 @@
 <!-- Header End====================================================================== -->
 <div id="carouselBlk">
     <?php if (@$sys_slide): ?>
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide" style="width: auto; height: 400px">
             <div id="carouselBlk">
                 <?php if (@$sys_slide->stt == "ON"): ?>
-                    <div style="height: 220px;" id="myCarousel" class="carousel slide">
-                        <div class="carousel-inner">
+                    <div style="height: 250px; width: auto" id="myCarousel" class="carousel slide">
+                        <div class="carousel-inner" style="width: auto; height: 400px">
                             <?php $i = TRUE; ?>
                             @foreach($slides as $sl)
                             <div class="item <?php
@@ -18,7 +18,7 @@
                             ?>">
                                 <div class="content container" title="<?php echo @$sl->description; ?>">
                                     <a href="{{route('product-detail',@$sl->id)}}">
-                                        <img class="img-reponsive" style="width: 95%; height: 200px;" src="{{asset('images/slide/'.$sl->image)}}" alt="{{route('product-detail',@$sl->id)}}"/>
+                                        <img class="img-reponsive" style="width: 100%; height: 95%;" src="{{asset('images/slide/'.$sl->image)}}" alt="{{route('product-detail',@$sl->id)}}"/>
                                     </a>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                 <!-- Sidebar end=============================================== -->
                 <div class="span9">		
                     <div class="well well-small">
-                        <h4>Latest products</h4>
+                        <h4>Sản phẩm mới nhất</h4>
                         <div class="row-fluid">
                             <div id="featured" class="carousel slide">
                                 <div class="thumbnails">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <h4>On Sale</h4>
+                    <h4>Đang bán</h4>
                     <ul class="thumbnails">
                         @foreach($sale_product as $sp)
                         <li class="span3">

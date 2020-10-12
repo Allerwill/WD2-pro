@@ -10,20 +10,20 @@
         <div class="col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <a href="{{route('products')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Product infor
+                    <a href="{{route('products')}}"><i class="fa fa-caret-square-o-up" style="color: #ffffff;"></i></a> Thông tin sản phẩm
                 </div>
                 <div class="panel-body">
                     <p>
-                        <span>Product id: </span><strong> {{@$x->id}} </strong>
+                        <span>Mã sản phẩm: </span><strong> {{@$x->id}} </strong>
                     </p>
                     <p>
-                        <span>Product name: </span><strong> {{@$x->name}} </strong>
+                        <span>Tên sản phẩm: </span><strong> {{@$x->name}} </strong>
                     </p>
                     <p>
-                        <span>Product types: </span><strong> <a href="{{route('viewtype',@$x->id_type)}}">Xem loại SP {{@$x->id_type}}</a> </strong>
+                        <span>Loại sản phẩm: </span><strong> <a href="{{route('viewtype',@$x->id_type)}}">Xem loại SP {{@$x->id_type}}</a> </strong>
                     </p>
                     <p>
-                        <span>Description: </span><span> <?php echo @$x->description; ?> </span>
+                        <span>Miêu tả: </span><span> <?php echo @$x->description; ?> </span>
                     </p>
                     <p>
                         <span>Đơn giá: </span><strong> {{@$x->unit_price}} </strong>
@@ -38,10 +38,10 @@
                         <span>Hot: </span><strong> {{@$x->new}} </strong>
                     </p>
                     <p>
-                        <span>Status: </span><strong> {{@$x->stt}} </strong>
+                        <span>Trạng thái: </span><strong> {{@$x->stt}} </strong>
                     </p>
                     <p>
-                        <p>Picture: </p>
+                        <p>Hình ảnh: </p>
                         <img style="max-width: 500px;" src="{{asset('images/product/'.$x->image)}}" alt="{{$x->name}}"/>
                     </p>
                 </div>
