@@ -57,11 +57,11 @@
                             <label>Unit:</label>
                             <select name="unit" class="form-control">
                                 <?php if ($x->unit == "Pound"): ?>
-                                    <option value="pound" selected="true">Pound</option>
-                                    <option value="liter">Liter</option>
+                                    <option value="pound" selected="true">Cái</option>
+                                    <option value="liter">Chiếc</option>
                                 <?php else: ?>
-                                    <option value="pound">Pound</option>
-                                    <option value="liter" selected="true">Liter</option>
+                                    <option value="pound">Cái</option>
+                                    <option value="liter" selected="true">Chiếc</option>
                                 <?php endif; ?>
                             </select>
                         </div>
