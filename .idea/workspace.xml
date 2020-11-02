@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SQL/ltw2p.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/product/W9d4RpO92XLIooa7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editproduct.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="648b24a8-643e-42b8-b573-df994d52304c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +110,7 @@
       <find>sort</find>
       <find>Sort</find>
       <find>Pound</find>
+      <find>Thêm vào giỏ</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -304,12 +301,12 @@
       <workItem from="1574589293039" duration="2016000" />
       <workItem from="1574954855178" duration="33888000" />
       <workItem from="1602406554754" duration="14020000" />
-      <workItem from="1602586982995" duration="2152000" />
+      <workItem from="1602586982995" duration="2747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16172000" />
+    <option name="totallyTimeSpent" value="16767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
